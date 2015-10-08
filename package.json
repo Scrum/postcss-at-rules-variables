@@ -1,0 +1,43 @@
+{
+  "name": "postcss-at-rules-variables",
+  "version": "0.0.0",
+  "description": "PostCss plugin to use CSS Custom Properties in at-rule @each, @for, @if, @else ",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "for",
+    "if",
+    "else",
+    "each",
+    "at-rules",
+    "property"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GitScrum/postcss-at-rules-variables.git"
+  },
+  "author": {
+    "name": "Scrum"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "balanced-match": "^0.2.0",
+    "object-assign": "^4.0.1",
+    "postcss": "^5.0.6"
+  },
+  "devDependencies": {
+    "chai": "3.2.0",
+    "gulp": "3.9.0",
+    "gulp-eslint": "0.11.1",
+    "gulp-mocha": "2.1.3"
+  },
+  "bugs": {
+    "url": "https://github.com/gitscrum/postcss-at-rules-variables/issues"
+  },
+  "homepage": "https://github.com/gitscrum/postcss-at-rules-variables#readme"
+}
