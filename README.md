@@ -87,7 +87,7 @@ $ npm install postcss-at-rules-variables
 ```
 
 ## Usage
-Use postcss-at-rules before you at-rules plugin
+Use postcss-at-rules-variables before you at-rules plugin
 
 ```js
 // dependencies
