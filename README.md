@@ -129,8 +129,7 @@ console.log(output);
 
 #### `atRules`
 
-Type: `Array`
-
+Type: `Array`  
 Default: `['for', 'if', 'else', 'each']`
 
 See [PostCSS](https://github.com/postcss/postcss) docs for examples for your environment.
