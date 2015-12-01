@@ -1,9 +1,8 @@
 /* global describe it */
-var postcss = require('postcss');
-var expect = require('chai').expect;
-
-var plugin = require('../src/index');
-var test = function (input, output, opts) {
+const postcss = require('postcss');
+const expect = require('chai').expect;
+const plugin = require('../lib/index');
+const test = (input, output, opts) => {
 	expect(postcss([plugin(opts)]).process(input).css).to.eql(output);
 };
 
