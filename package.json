@@ -8,7 +8,8 @@
     "compile": "rm -rf ./lib && mkdir ./lib && babel --presets es2015 src/index.es6.js --out-file lib/index.js",
     "prepublish": "npm run compile",
     "coverage": "istanbul cover _mocha --",
-    "coveralls": "coveralls < coverage/lcov.info"
+    "coveralls": "coveralls < coverage/lcov.info",
+    "precoveralls": "npm run coverage"
   },
   "keywords": [
     "postcss",
