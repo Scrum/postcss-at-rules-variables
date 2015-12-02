@@ -1,13 +1,13 @@
 {
   "name": "postcss-at-rules-variables",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "PostCss plugin to use CSS Custom Properties in at-rule @each, @for, @if, @else ",
   "main": "./lib/index.js",
   "scripts": {
     "test": "xo ./src/*.js ./test/*.js && mocha --compilers js:babel-core/register ./test/*.js",
     "compile": "rm -rf ./lib && mkdir ./lib && babel --presets es2015 src/index.es6.js --out-file lib/index.js",
     "prepublish": "npm run compile",
-    "coverage": "istanbul cover _mocha --",
+    "coverage": "babel-node ./node_modules/isparta/bin/isparta cover _mocha --",
     "coveralls": "coveralls < coverage/lcov.info",
     "precoveralls": "npm run coverage"
   },
@@ -42,7 +42,7 @@
     "babel-preset-es2015": "^6.1.18",
     "chai": "^3.4.1",
     "coveralls": "^2.11.4",
-    "istanbul": "^0.4.1",
+    "isparta": "^4.0.0",
     "mocha": "^2.3.4",
     "xo": "^0.11.2"
   },
