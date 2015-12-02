@@ -32,7 +32,7 @@ module.exports = postcss.plugin('postcss-at-rules-variables', options => {
 		}
 	});
 
-	return function (css) {
+	return css => {
 		const reg = new RegExp(mergeOoptions.atRules.join('|'));
 
 		css.walkRules(rule => {
