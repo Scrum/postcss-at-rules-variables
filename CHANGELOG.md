@@ -1,3 +1,8 @@
+## [0.0.14] - 22-01-2016
+### Change
+- update xo to v0.12.1
+- compile run
+
 ## [0.0.13] - 26-12-2015
 ### Change
 - update lodash to v4.*
