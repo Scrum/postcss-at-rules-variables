@@ -1,11 +1,11 @@
 {
   "name": "postcss-at-rules-variables",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "PostCss plugin to use CSS Custom Properties in at-rule @each, @for, @if, @else ",
   "main": "./lib/index.js",
   "scripts": {
     "test": "xo ./src/*.js ./test/*.js && mocha --compilers js:babel-core/register ./test/*.js",
-    "compile": "rm -rf ./lib && mkdir ./lib && babel --presets es2015 src/index.es6.js --out-file lib/index.js",
+    "compile": "babel --presets es2015 src/index.es6.js --out-file lib/index.js",
     "prepublish": "npm run compile",
     "coverage": "babel-node ./node_modules/isparta/bin/isparta cover _mocha --",
     "coveralls": "coveralls < coverage/lcov.info",
@@ -44,7 +44,7 @@
     "coveralls": "^2.11.4",
     "isparta": "^4.0.0",
     "mocha": "^2.3.4",
-    "xo": "^0.11.2"
+    "xo": "^0.12.1"
   },
   "bugs": {
     "url": "https://github.com/gitscrum/postcss-at-rules-variables/issues"
