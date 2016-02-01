@@ -8,7 +8,7 @@ const maps = {};
 function resolveValue(value) {
 	const start = value.indexOf(`${VAR_FUNC_IDENTIFIER}(`);
 	if (start === -1) {
-		return [value];
+		return value;
 	}
 
 	value.match(/var\(\S*\)/g).map(match => {
