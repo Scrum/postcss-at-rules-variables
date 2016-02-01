@@ -1,3 +1,7 @@
+## [0.0.15] - 01-02-2016
+### Fixed
+- Fixed #10, Wrong loop syntax
+
 ## [0.0.14] - 22-01-2016
 ### Change
 - update xo to v0.12.1
