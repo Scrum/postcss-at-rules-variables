@@ -59,7 +59,7 @@ describe('postcss-at-rules-variables', () => {
 		);
 	});
 
-	it('it not enter params', () => {
+	it('it without variables', () => {
 		test(
 			':root{ --red: red; } @if var(--green) { color: var(--green) }',
 			':root{ --red: red; } @if var(--green) { color: var(--green) }'
