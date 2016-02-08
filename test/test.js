@@ -58,4 +58,11 @@ describe('postcss-at-rules-variables', () => {
 			{atRules: ['each']}
 		);
 	});
+
+	it('it without variables', () => {
+		test(
+			':root{ --red: red; } @if var(--green) { color: var(--green) }',
+			':root{ --red: red; } @if var(--green) { color: var(--green) }'
+		);
+	});
 });
