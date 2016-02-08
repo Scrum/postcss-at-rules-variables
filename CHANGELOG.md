@@ -1,3 +1,11 @@
+## [0.0.16] - 08-02-2016
+### Added
+- Added #11, test if not variables
+
+### Fixed
+- Fixed #13, not removes and creates lib folder
+- Fixed #14, if not variables, return undefined
+
 ## [0.0.15] - 01-02-2016
 ### Fixed
 - Fixed #10, Wrong loop syntax
