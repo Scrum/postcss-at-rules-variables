@@ -14,7 +14,7 @@ function resolveValue(value) {
 	value.match(/var\(\S*\)/g).map(match => {
 		const matches = balanced('(', ')', match);
 		const reg = new RegExp(`${VAR_FUNC_IDENTIFIER}.(${matches.body}.)`, 'g');
-		const property = maps[matches.body];
+		const property = maps[matches.body] || match;
 
 		value = value.replace(reg, property);
 	});
