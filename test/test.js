@@ -58,4 +58,11 @@ describe('postcss-at-rules-variables', () => {
 			{atRules: ['each']}
 		);
 	});
+
+	it('it not enter params', () => {
+		test(
+			':root{ --red: red; } @if var(--green) { color: var(--green) }',
+			':root{ --red: red; } @if var(--green) { color: var(--green) }'
+		);
+	});
 });
