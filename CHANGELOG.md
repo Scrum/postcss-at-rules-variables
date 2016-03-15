@@ -1,3 +1,23 @@
+## [0.0.17] - 15-03-2016
+### Added 
+- Added #18, babel config to package.json
+- Added #27, updtr
+
+### Change
+- Update gitignore, added sublime config
+- Update #23, change name run compile to build
+- Update #24, update runers
+- Update #25, devDep
+- Change #20, babel-core to babel-register
+- Change #26, es2015 to node5
+
+### Removed
+- Remove #22, babel-runtime, not need
+- Remove #18, .babelrc to package json
+
+### Fixed
+- Fixed xo report error
+
 ## [0.0.16] - 08-02-2016
 ### Added
 - Added #11, test if not variables
