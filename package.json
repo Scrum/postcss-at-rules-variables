@@ -6,7 +6,7 @@
   "scripts": {
     "test": "xo ./src/*.js ./test/*.js && mocha --compilers js:babel-core/register ./test/*.js",
     "clean": "rm -rf lib && mkdir lib",
-    "compile": "npm run clean && babel --presets es2015 src/index.es6.js --out-file lib/index.js",
+    "build": "npm run clean && babel --presets es2015 src/index.es6.js --out-file lib/index.js",
     "prepublish": "npm run compile",
     "coverage": "babel-node ./node_modules/isparta/bin/isparta cover _mocha --",
     "coveralls": "coveralls < coverage/lcov.info",
