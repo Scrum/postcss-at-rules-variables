@@ -32,7 +32,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "babel-runtime": "^6.2.0",
     "balanced-match": "^0.3.0",
     "lodash": "^4.0.0",
     "postcss": "^5.0.12"
