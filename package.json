@@ -46,6 +46,11 @@
     "mocha": "^2.3.4",
     "xo": "^0.12.1"
   },
+  "babel": {
+      "presets": [
+        "node5"
+      ]
+  },
   "bugs": {
     "url": "https://github.com/gitscrum/postcss-at-rules-variables/issues"
   },
