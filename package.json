@@ -4,13 +4,14 @@
   "description": "PostCss plugin to use CSS Custom Properties in at-rule @each, @for, @if, @else ",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "xo ./src/*.js ./test/*.js && mocha --compilers js:babel-core/register ./test/*.js",
+    "test": "xo ./src/*.js ./test/*.js && mocha --compilers js:babel-register ./test/*.js",
     "clean": "rm -rf lib && mkdir lib",
-    "build": "npm run clean && babel --presets es2015 src/index.es6.js --out-file lib/index.js",
-    "prepublish": "npm run compile",
+    "build": "npm run clean && babel --presets node5 src/index.es6.js --out-file lib/index.js",
+    "prepublish": "npm run build",
     "coverage": "babel-node ./node_modules/isparta/bin/isparta cover _mocha --",
     "coveralls": "coveralls < coverage/lcov.info",
-    "precoveralls": "npm run coverage"
+    "precoveralls": "npm run coverage",
+    "update": "updtr"
   },
   "keywords": [
     "postcss",
@@ -44,6 +45,7 @@
     "coveralls": "^2.11.4",
     "isparta": "^4.0.0",
     "mocha": "^2.3.4",
+    "updtr": "^0.1.7",
     "xo": "^0.12.1"
   },
   "babel": {
