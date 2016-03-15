@@ -17,6 +17,7 @@ function resolveValue(value) {
 		const property = maps[matches.body] || match;
 
 		value = value.replace(reg, property);
+		return true;
 	});
 	return value;
 }
