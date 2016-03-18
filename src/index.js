@@ -1,43 +1,34 @@
 import postcss from 'postcss';
-import balanced from 'balanced-match';
-import _ from 'lodash';
+import {merge} from 'lodash';
 
 const VAR_FUNC_IDENTIFIER = 'var';
 const maps = {};
 
 function resolveValue(value) {
-	const start = value.indexOf(`${VAR_FUNC_IDENTIFIER}(`);
-	if (start === -1) {
+	const hasVar = value.indexOf(`${VAR_FUNC_IDENTIFIER}(`);
+	if (hasVar === -1) {
 		return value;
 	}
 
-	value.match(/var\(\S*\)/g).map(match => {
-		const matches = balanced('(', ')', match);
-		const reg = new RegExp(`${VAR_FUNC_IDENTIFIER}.(${matches.body}.)`, 'g');
-		const property = maps[matches.body] || match;
-
-		value = value.replace(reg, property);
-		return true;
-	});
-	return value;
+	return value.replace(/var\(--.*?\)/g, (match) => maps[match.slice(4, -1)] || match);
 }
 
-module.exports = postcss.plugin('postcss-at-rules-variables', options => {
+export default postcss.plugin('postcss-at-rules-variables', options => {
 	const DEFAULT = {
 		atRules: ['for', 'if', 'else', 'each']
 	};
 
-	const mergeOoptions = _.merge(DEFAULT, options, (a, b) => {
-		if (_.isArray(a)) {
+	const mergeOptions = merge(DEFAULT, options, (a, b) => {
+		if (Array.isArray(a)) {
 			return a.concat(b);
 		}
 	});
 
-	return css => {
-		const reg = new RegExp(mergeOoptions.atRules.join('|'));
+	return nodes => {
+		const reg = new RegExp(mergeOptions.atRules.join('|'));
 
-		css.walkRules(rule => {
-			if (rule.selectors[0] !== ':root') {
+		nodes.walkRules(rule => {
+			if (rule.selector !== ':root') {
 				return;
 			}
 
@@ -48,7 +39,7 @@ module.exports = postcss.plugin('postcss-at-rules-variables', options => {
 			});
 		});
 
-		css.walkAtRules(reg, rules => {
+		nodes.walkAtRules(reg, rules => {
 			rules.params = resolveValue(rules.params);
 		});
 	};
