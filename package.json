@@ -6,12 +6,12 @@
   "scripts": {
     "test": "xo ./src/*.js ./test/*.js && mocha --compilers js:babel-register ./test/*.js",
     "clean": "rm -rf lib && mkdir lib",
-    "build": "npm run clean && babel --presets node5 src/index.js --out-file lib/index.js",
-    "prepublish": "npm run build",
+    "build": "npm run clean && babel --presets node5 src/index.js --out-file lib/index.js && npm t",
+    "prepublish": "updtr && npm run build",
     "coverage": "nyc node_modules/mocha/bin/_mocha --compilers js:babel-register",
     "coveralls": "coveralls < coverage/lcov.info",
     "precoveralls": "npm run coverage",
-    "update": "updtr"
+    "update": ""
   },
   "keywords": [
     "postcss",
@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.6.5",
-    "babel-preset-node5": "^10.8.0",
+    "babel-preset-node5": "^11.0.0",
     "babel-register": "^6.7.2",
     "chai": "^3.5.0",
     "coveralls": "^2.11.8",
