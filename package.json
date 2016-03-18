@@ -6,7 +6,7 @@
   "scripts": {
     "test": "xo !./lib/ && nyc ava",
     "clean": "rm -rf lib && mkdir lib",
-    "build": "npm run clean && babel --presets node5 src/index.js --out-file lib/index.js",
+    "build": "npm run clean && babel src/index.js --out-file lib/index.js",
     "prepublish": "updtr && npm run build"
   },
   "keywords": [
