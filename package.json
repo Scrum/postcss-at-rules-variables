@@ -8,7 +8,7 @@
     "clean": "rm -rf lib && mkdir lib",
     "build": "npm run clean && babel --presets node5 src/index.js --out-file lib/index.js",
     "prepublish": "npm run build",
-    "coverage": "babel-node ./node_modules/isparta/bin/isparta cover _mocha --",
+    "coverage": "babel-node ./node_modules/isparta/bin/isparta cover --report text node_modules/mocha/bin/_mocha --",
     "coveralls": "coveralls < coverage/lcov.info",
     "precoveralls": "npm run coverage",
     "update": "updtr"
