@@ -4,7 +4,7 @@
   "description": "PostCss plugin to use CSS Custom Properties in at-rule @each, @for, @if, @else ",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "xo !./lib/ && nyc ava",
+    "test": "xo ./src/*.js ./test/*.js && nyc ava",
     "clean": "rm -rf lib && mkdir lib",
     "build": "npm run clean && babel src/index.js --out-file lib/index.js && npm t",
     "prepublish": "updtr && npm run build"
