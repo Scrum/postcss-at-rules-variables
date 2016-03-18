@@ -7,10 +7,7 @@
     "test": "xo !./lib/ && nyc ava",
     "clean": "rm -rf lib && mkdir lib",
     "build": "npm run clean && babel --presets node5 src/index.js --out-file lib/index.js && npm t",
-    "prepublish": "updtr && npm run build",
-    "coverage": "nyc node_modules/mocha/bin/_mocha --compilers js:babel-register",
-    "coveralls": "coveralls < coverage/lcov.info",
-    "precoveralls": "npm run coverage"
+    "prepublish": "updtr && npm run build"
   },
   "keywords": [
     "postcss",
