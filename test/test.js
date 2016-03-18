@@ -1,68 +1,55 @@
-/* global describe it */
 import postcss from 'postcss';
-import {expect} from 'chai';
+import test from 'ava';
 import plugin from '../lib/index';
-const test = (input, output, opts) => {
-	expect(postcss([plugin(opts)]).process(input).css).to.eql(output);
+
+const processing = (input, opts) => {
+	return postcss([plugin(opts)]).process(input).css;
 };
 
-describe('postcss-at-rules-variables', () => {
-	it('it change first properties for @for', () => {
-		test(
-			':root{ --from: 1; } @for $i from var(--from) to 2',
-			':root{ --from: 1; } @for $i from 1 to 2'
-		);
-	});
+test('it change first properties for @for', t => {
+	const expected = ':root{ --from: 1; } @for $i from 1 to 2';
+	const value = ':root{ --from: 1; } @for $i from var(--from) to 2';
+	t.is(processing(value), expected);
+});
 
-	it('it change second properties for @for', () => {
-		test(
-			':root{ --to: 2; } @for $i from 1 to var(--to)',
-			':root{ --to: 2; } @for $i from 1 to 2'
-		);
-	});
+test('it change second properties for @for', t => {
+	const expected = ':root{ --to: 2; } @for $i from 1 to 2';
+	const value = ':root{ --to: 2; } @for $i from 1 to var(--to)';
+	t.is(processing(value), expected);
+});
 
-	it('it change two properties for @for', () => {
-		test(
-			':root{ --from: 1; --to: 2; } @for $i from var(--from) to var(--to)',
-			':root{ --from: 1; --to: 2; } @for $i from 1 to 2'
-		);
-	});
+test('it change two properties for @for', t => {
+	const expected = ':root{ --from: 1; --to: 2; } @for $i from 1 to 2';
+	const value = ':root{ --from: 1; --to: 2; } @for $i from var(--from) to var(--to)';
+	t.is(processing(value), expected);
+});
 
-	it('it change three properties for @for', () => {
-		test(
-			':root{ --from: 1; --to: 2; --step: 5 } @for $i from var(--from) to var(--to) by var(--step)',
-			':root{ --from: 1; --to: 2; --step: 5 } @for $i from 1 to 2 by 5'
-		);
-	});
+test('it change three properties for @for', t => {
+	const expected = ':root{ --from: 1; --to: 2; --step: 5 } @for $i from 1 to 2 by 5';
+	const value = ':root{ --from: 1; --to: 2; --step: 5 } @for $i from var(--from) to var(--to) by var(--step)';
+	t.is(processing(value), expected);
+});
 
-	it('it change two properties for @if', () => {
-		test(
-			':root{ --first: 1; --second: 2; } @if var(--first) < var(--second)',
-			':root{ --first: 1; --second: 2; } @if 1 < 2',
-			{atRules: ['if']}
-		);
-	});
+test('it change two properties for @if', t => {
+	const expected = ':root{ --first: 1; --second: 2; } @if 1 < 2';
+	const value = ':root{ --first: 1; --second: 2; } @if var(--first) < var(--second)';
+	t.is(processing(value, {atRules: ['if']}), expected);
+});
 
-	it('it change two properties for @if, @else if', () => {
-		test(
-			':root{ --first: 1; --second: 2; } @if var(--first) < var(--second) { color: olive; } @else if var(--first) > var(--second) { color: red; }',
-			':root{ --first: 1; --second: 2; } @if 1 < 2 { color: olive; } @else if 1 > 2 { color: red; }',
-			{atRules: ['if', 'else']}
-		);
-	});
+test('it change two properties for @if, @else if', t => {
+	const expected = ':root{ --first: 1; --second: 2; } @if 1 < 2 { color: olive; } @else if 1 > 2 { color: red; }';
+	const value = ':root{ --first: 1; --second: 2; } @if var(--first) < var(--second) { color: olive; } @else if var(--first) > var(--second) { color: red; }';
+	t.is(processing(value, {atRules: ['if', 'else']}), expected);
+});
 
-	it('it change multi properties for @each', () => {
-		test(
-			':root{ --array: foo, bar, baz; } @each $val in var(--array)',
-			':root{ --array: foo, bar, baz; } @each $val in foo, bar, baz',
-			{atRules: ['each']}
-		);
-	});
+test('it change multi properties for @each', t => {
+	const expected = ':root{ --array: foo, bar, baz; } @each $val in foo, bar, baz';
+	const value = ':root{ --array: foo, bar, baz; } @each $val in var(--array)';
+	t.is(processing(value, {atRules: ['each']}), expected);
+});
 
-	it('it without variables', () => {
-		test(
-			':root{ --red: red; } @if var(--green) { color: var(--green) }',
-			':root{ --red: red; } @if var(--green) { color: var(--green) }'
-		);
-	});
+test('it without variables', t => {
+	const expected = ':root{ --red: red; } @if var(--green) { color: var(--green) }';
+	const value = ':root{ --red: red; } @if var(--green) { color: var(--green) }';
+	t.is(processing(value), expected);
 });
