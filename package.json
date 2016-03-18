@@ -1,17 +1,13 @@
 {
   "name": "postcss-at-rules-variables",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "PostCss plugin to use CSS Custom Properties in at-rule @each, @for, @if, @else ",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "xo ./src/*.js ./test/*.js && mocha --compilers js:babel-register ./test/*.js",
+    "test": "xo ./src/*.js ./test/*.js && nyc ava",
     "clean": "rm -rf lib && mkdir lib",
-    "build": "npm run clean && babel --presets node5 src/index.es6.js --out-file lib/index.js",
-    "prepublish": "npm run build",
-    "coverage": "babel-node ./node_modules/isparta/bin/isparta cover _mocha --",
-    "coveralls": "coveralls < coverage/lcov.info",
-    "precoveralls": "npm run coverage",
-    "update": "updtr"
+    "build": "npm run clean && babel src/index.js --out-file lib/index.js && npm t",
+    "prepublish": "updtr && npm run build"
   },
   "keywords": [
     "postcss",
@@ -38,19 +34,23 @@
     "postcss": "^5.0.19"
   },
   "devDependencies": {
+    "ava": "^0.13.0",
     "babel-cli": "^6.6.5",
-    "babel-preset-node5": "^10.8.0",
+    "babel-preset-node5": "^11.0.0",
     "babel-register": "^6.7.2",
-    "chai": "^3.5.0",
     "coveralls": "^2.11.8",
-    "isparta": "^4.0.0",
-    "mocha": "^2.4.5",
+    "nyc": "^6.1.1",
     "updtr": "^0.1.7",
     "xo": "^0.13.0"
   },
   "babel": {
     "presets": [
       "node5"
+    ]
+  },
+  "ava": {
+    "require": [
+      "babel-register"
     ]
   },
   "bugs": {

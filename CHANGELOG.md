@@ -1,3 +1,25 @@
+## [0.0.17] - 18-03-2016
+### Added 
+- Added #1, ava
+- Added #19, coverage to travis config
+- Adeed test after transpiling
+
+### Change
+- Change #21, isparta to nyc
+- Rename index.es6 to index
+- Update #28, move updtr to prepublish
+- Change #1, test to ava
+- Update #31, matcher and core
+
+### Removed
+- Removed #30, ild node version in .travis config
+- Removed #1, mocha chai
+- Remove #19, coverage runs in package.json
+- Remove config for babel from cli
+
+### Fixed
+- Fixed report coverage
+
 ## [0.0.17] - 15-03-2016
 ### Added 
 - Added #18, babel config to package.json
