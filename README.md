@@ -97,7 +97,7 @@ var fs = require("fs");
 var postcss = require("postcss");
 var atImport = require("postcss-import");
 var atEach = require("postcss-each");
-var atVariables = require("postcss-at-rules-variables");
+var atVariables = require("postcss-at-rules-variables").default;
 var atIf = require('postcss-conditionals');
 var atFor = require('postcss-for');
 var customProperties = require("postcss-custom-properties");
@@ -112,8 +112,8 @@ var output = postcss()
   .use(atEach())
   .use(atImport({
   	plugins: [
-  		require("postcss-at-rules-variables")({ /* options */ }),
-  		require("postcss-import"),
+  		require("postcss-at-rules-variables").default({ /* options */ }),
+  		require("postcss-import")
   	]
   }))
   .use(atFor())
