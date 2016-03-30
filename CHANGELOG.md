@@ -1,4 +1,4 @@
-## [0.0.17] - 18-03-2016
+## [0.0.18] - 18-03-2016
 ### Added 
 - Added #1, ava
 - Added #19, coverage to travis config
