@@ -9,44 +9,44 @@ Used in conjunction with the plugin [postcss-each], [postcss-conditionals], [pos
 ```css
 /* input.css */
 :root {
-	--array: foo, bar, baz;
-	--from: 1;
-	--to: 3;
-	--icon-exclude: 2;
-	--color-danger: red;
+    --array: foo, bar, baz;
+    --from: 1;
+    --to: 3;
+    --icon-exclude: 2;
+    --color-danger: red;
 }
 
 @each $val in var(--array) {
-	@import "$val.css";
+    @import "$val.css";
 }
 ```
 
 ```css
 /* foo.css */
 html {
-	background-color: var(--color-danger);
+    background-color: var(--color-danger);
 }
 ```
 
 ```css
 /* bar.css */
 .some-class {
-	color: #fff;
+    color: #fff;
 
-	@for $val from var(--from) to var(--to) {
-		@if $val != var(--icon-exclude) {
-			.icon-$val {
-				background-position: 0 $(val)px;
-			}
-		}
-	}
+    @for $val from var(--from) to var(--to) {
+        @if $val != var(--icon-exclude) {
+            .icon-$val {
+                background-position: 0 $(val)px;
+            }
+        }
+    }
 }
 ```
 
 ```css
 /* baz.css */
 h1 {
-	font-size: 24px;
+    font-size: 24px;
 }
 
 @import "biz.css";
@@ -55,29 +55,29 @@ h1 {
 ```css
 /* biz.css */
 h2 {
-	color: olive;
+    color: olive;
 }
 ```
 
 ```css
 /* Output example */
 html {
-	background-color: red;
+    background-color: red;
 }
 .some-class {
-	color: #fff;
-	.icon-1 {
-		background-position: 0 1px;
-	}
-	.icon-3 {
-		background-position: 0 3px;
-	}
+    color: #fff;
+    .icon-1 {
+        background-position: 0 1px;
+    }
+    .icon-3 {
+        background-position: 0 3px;
+    }
 }
 h1 {
-	font-size: 24px;
+    font-size: 24px;
 }
 h2 {
-	color: olive;
+    color: olive;
 }
 
 ```
@@ -97,7 +97,7 @@ var fs = require("fs");
 var postcss = require("postcss");
 var atImport = require("postcss-import");
 var atEach = require("postcss-each");
-var atVariables = require("postcss-at-rules-variables").default;
+var atVariables = require("postcss-at-rules-variables");
 var atIf = require('postcss-conditionals');
 var atFor = require('postcss-for');
 var customProperties = require("postcss-custom-properties");
@@ -111,10 +111,10 @@ var output = postcss()
   .use(atVariables({ /* options */ }))
   .use(atEach())
   .use(atImport({
-  	plugins: [
-  		require("postcss-at-rules-variables").default({ /* options */ }),
-  		require("postcss-import")
-  	]
+    plugins: [
+        require("postcss-at-rules-variables").default({ /* options */ }),
+        require("postcss-import")
+    ]
   }))
   .use(atFor())
   .use(atIf())
@@ -136,6 +136,6 @@ Default: `['for', 'if', 'else', 'each']`
 
 See [PostCSS](https://github.com/postcss/postcss) docs for examples for your environment.
 
-[postcss-conditionals]:		https://github.com/andyjansson/postcss-conditionals
-[postcss-each]:				https://github.com/outpunk/postcss-each
-[postcss-for]:				https://github.com/antyakushev/postcss-for
+[postcss-conditionals]:     https://github.com/andyjansson/postcss-conditionals
+[postcss-each]:             https://github.com/outpunk/postcss-each
+[postcss-for]:              https://github.com/antyakushev/postcss-for

@@ -1,3 +1,20 @@
+## [0.0.19] - 02-04-2016
+### Added 
+- Added #34, husky
+
+### Change
+- Change #40, update .editorconfig, change tab to space all and js to tab
+- Change #5, update readme change tab to space
+- Change #37, testing src instead lib
+- Move #35, updtr to npm run updateDev
+- Change #42, lodash merge to deep-assign
+
+### Remove
+- Remove #36, balance-match not used
+
+### Fixed
+- Fixed #39, resolve export default for require
+
 ## [0.0.18] - 18-03-2016
 ### Added 
 - Added #1, ava
