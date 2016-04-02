@@ -1,5 +1,5 @@
 import postcss from 'postcss';
-import {merge} from 'lodash';
+import deepAssign from 'deep-assign';
 
 const VAR_FUNC_IDENTIFIER = 'var';
 const maps = {};
@@ -18,7 +18,7 @@ export default postcss.plugin('postcss-at-rules-variables', options => {
 		atRules: ['for', 'if', 'else', 'each']
 	};
 
-	const mergeOptions = merge(DEFAULT, options, (a, b) => {
+	const mergeOptions = deepAssign(DEFAULT, options, (a, b) => {
 		if (Array.isArray(a)) {
 			return a.concat(b);
 		}

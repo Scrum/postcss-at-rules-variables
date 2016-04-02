@@ -32,7 +32,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "lodash": "^4.6.1",
+    "deep-assign": "^2.0.0",
     "postcss": "^5.0.19"
   },
   "devDependencies": {

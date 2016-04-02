@@ -43,8 +43,8 @@ test('it change two properties for @if, @else if', t => {
 });
 
 test('it change multi properties for @each', t => {
-	const expected = ':root{ --array: foo, bar, baz; } @each $val in foo, bar, baz';
-	const value = ':root{ --array: foo, bar, baz; } @each $val in var(--array)';
+	const expected = ':root{ --array: foo, bar, baz; } @each $val in foo, bar, baz @for foo, bar, baz';
+	const value = ':root{ --array: foo, bar, baz; } @each $val in var(--array) @for var(--array)';
 	t.is(processing(value, {atRules: ['each']}), expected);
 });
 
