@@ -48,7 +48,7 @@
       "node5"
     ],
     "plugins": [
-      "babel-plugin-add-module-exports"
+      "add-module-exports"
     ]
   },
   "ava": {
