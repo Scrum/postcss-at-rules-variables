@@ -29,7 +29,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "balanced-match": "^0.3.0",
     "lodash": "^4.6.1",
     "postcss": "^5.0.19"
   },
