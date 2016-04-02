@@ -39,6 +39,7 @@
     "babel-preset-node5": "^11.0.0",
     "babel-register": "^6.7.2",
     "coveralls": "^2.11.8",
+    "husky": "^0.11.4",
     "nyc": "^6.1.1",
     "updtr": "^0.1.7",
     "xo": "^0.13.0"
