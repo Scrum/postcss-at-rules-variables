@@ -1,16 +1,33 @@
 import postcss from 'postcss';
-import deepAssign from 'deep-assign';
+import {merge as assign} from 'lodash';
 
-const VAR_FUNC_IDENTIFIER = 'var';
-const maps = {};
+function hasVar(str) {
+	return str.indexOf('var(');
+}
 
-function resolveValue(value) {
-	const hasVar = value.indexOf(`${VAR_FUNC_IDENTIFIER}(`);
-	if (hasVar === -1) {
+function resolveValue(value, maps) {
+	if (hasVar(value) === -1) {
 		return value;
 	}
 
 	return value.replace(/var\(--.*?\)/g, (match) => maps[match.slice(4, -1)] || match);
+}
+
+function getProperty(nodes) {
+	let propertys = {};
+
+	nodes.walkRules(rule => {
+		if (rule.selector !== ':root') {
+			return;
+		}
+
+		rule.each(decl => {
+			const {prop, value} = decl;
+			propertys[prop] = value;
+		});
+	});
+
+	return propertys;
 }
 
 export default postcss.plugin('postcss-at-rules-variables', options => {
@@ -18,29 +35,18 @@ export default postcss.plugin('postcss-at-rules-variables', options => {
 		atRules: ['for', 'if', 'else', 'each']
 	};
 
-	const mergeOptions = deepAssign(DEFAULT, options, (a, b) => {
+	options = assign(DEFAULT, options, (a, b) => {
 		if (Array.isArray(a)) {
 			return a.concat(b);
 		}
 	});
 
 	return nodes => {
-		const reg = new RegExp(mergeOptions.atRules.join('|'));
+		const maps = getProperty(nodes);
+		const {atRules} = options;
 
-		nodes.walkRules(rule => {
-			if (rule.selector !== ':root') {
-				return;
-			}
-
-			rule.each(decl => {
-				const prop = decl.prop;
-				const value = decl.value;
-				maps[prop] = value;
-			});
-		});
-
-		nodes.walkAtRules(reg, rules => {
-			rules.params = resolveValue(rules.params);
+		nodes.walkAtRules(new RegExp(atRules.join('|')), rules => {
+			rules.params = resolveValue(rules.params, maps);
 		});
 	};
 });

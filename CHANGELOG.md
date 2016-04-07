@@ -1,3 +1,22 @@
+## [0.0.20] - 07-04-2016
+### Added
+- Added #41, trevor
+- Added #46, ava-codemods
+- Added #44, lodash.merge
+
+### Change
+- Change #48, updateDev to update
+- Update #45, devDep
+- Update #33, core
+
+### Remove
+- Remove #47, run task postinstall
+- Remove #41, trevor need nvm
+- Remove #44, deep-assign, not merge array
+
+### Fixed
+- Fixed #44, broken test, deep-assign not merge array. Change to lodash
+
 ## [0.0.19] - 02-04-2016
 ### Added 
 - Added #34, husky
