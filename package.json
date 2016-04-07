@@ -10,7 +10,7 @@
     "postinstall": "npm run updateDev",
     "prepublish": "npm run build",
     "prepush": "npm test",
-    "updateDev": "updtr"
+    "update": "updtr"
   },
   "keywords": [
     "postcss",
