@@ -35,7 +35,7 @@
     "postcss": "^5.0.19"
   },
   "devDependencies": {
-    "ava": "^0.13.0",
+    "ava": "^0.14.0",
     "babel-cli": "^6.6.5",
     "babel-plugin-add-module-exports": "^0.1.2",
     "babel-preset-node5": "^11.0.0",
@@ -44,7 +44,7 @@
     "husky": "^0.11.4",
     "nyc": "^6.1.1",
     "trevor": "^1.1.4",
-    "updtr": "^0.1.7",
+    "updtr": "^0.1.10",
     "xo": "^0.13.0"
   },
   "babel": {
