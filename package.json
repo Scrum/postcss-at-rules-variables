@@ -9,7 +9,7 @@
     "build": "npm run clean && babel src/index.js --out-file lib/index.js",
     "prepublish": "npm run build",
     "prepush": "npm test",
-    "update": "updtr"
+    "update": "updtr && ava-codemods"
   },
   "keywords": [
     "postcss",
@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "ava": "^0.14.0",
+    "ava-codemods": "^0.2.1",
     "babel-cli": "^6.6.5",
     "babel-plugin-add-module-exports": "^0.1.2",
     "babel-preset-node5": "^11.0.0",
