@@ -1,5 +1,5 @@
 import postcss from 'postcss';
-import {merge as assign} from 'lodash';
+import {mergeWith} from 'lodash';
 
 function hasVar(str) {
 	return str.indexOf('var(');
@@ -35,7 +35,7 @@ export default postcss.plugin('postcss-at-rules-variables', options => {
 		atRules: ['for', 'if', 'else', 'each']
 	};
 
-	options = assign(DEFAULT, options, (a, b) => {
+	const opt = mergeWith(DEFAULT, options, (a, b) => {
 		if (Array.isArray(a)) {
 			return a.concat(b);
 		}
@@ -43,7 +43,7 @@ export default postcss.plugin('postcss-at-rules-variables', options => {
 
 	return nodes => {
 		const maps = getProperty(nodes);
-		const {atRules} = options;
+		const {atRules} = opt;
 
 		nodes.walkAtRules(new RegExp(atRules.join('|')), rules => {
 			rules.params = resolveValue(rules.params, maps);

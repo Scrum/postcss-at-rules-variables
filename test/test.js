@@ -1,6 +1,6 @@
 import postcss from 'postcss';
 import test from 'ava';
-import plugin from '../src/index';
+import plugin from '../src/';
 
 const processing = (input, opts) => {
 	return postcss([plugin(opts)]).process(input).css;
