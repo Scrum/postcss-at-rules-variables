@@ -1,3 +1,10 @@
+## [0.0.21] - 07-04-2016
+### Change
+- Update #51, devDep and dev
+
+### Fixed
+- Fixed #50, missing lodash
+
 ## [0.0.20] - 07-04-2016
 ### Added
 - Added #41, trevor
