@@ -112,7 +112,7 @@ var output = postcss()
   .use(atEach())
   .use(atImport({
     plugins: [
-        require("postcss-at-rules-variables").default({ /* options */ }),
+        require("postcss-at-rules-variables")({ /* options */ }),
         require("postcss-import")
     ]
   }))
