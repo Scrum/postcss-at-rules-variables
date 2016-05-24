@@ -39,7 +39,7 @@
     "ava-codemods": "^0.2.1",
     "babel-cli": "^6.6.5",
     "babel-plugin-add-module-exports": "^0.2.0",
-    "babel-preset-node5": "^11.0.1",
+    "babel-preset-es2015-node6": "^0.2.0",
     "babel-register": "^6.7.2",
     "coveralls": "^2.11.9",
     "husky": "^0.11.4",
@@ -49,7 +49,7 @@
   },
   "babel": {
     "presets": [
-      "node5"
+      "es2015-node6"
     ],
     "plugins": [
       "add-module-exports"
