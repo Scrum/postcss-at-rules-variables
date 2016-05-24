@@ -10,7 +10,7 @@ function resolveValue(value, maps) {
 		return value;
 	}
 
-	return value.replace(/var\(--.*?\)/g, (match) => maps[match.slice(4, -1)] || match);
+	return value.replace(/var\(--.*?\)/g, match => maps[match.slice(4, -1)] || match);
 }
 
 function getProperty(nodes) {
