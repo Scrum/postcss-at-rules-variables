@@ -2,7 +2,8 @@
   "name": "postcss-at-rules-variables",
   "version": "0.0.21",
   "description": "PostCss plugin to use CSS Custom Properties in at-rule @each, @for, @if, @else ",
-  "main": "./lib/index.js",
+  "main": "lib/index.js",
+  "files": "lib/index.js",
   "scripts": {
     "test": "xo ./src/*.js ./test/*.js && nyc ava",
     "clean": "rm -rf lib && mkdir lib",
