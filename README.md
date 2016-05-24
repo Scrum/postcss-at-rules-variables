@@ -3,7 +3,8 @@
 
 [![npm downloads](https://img.shields.io/npm/dm/postcss-at-rules-variables.svg?style=flat-square)](https://www.npmjs.com/package/postcss-at-rules-variables)[![npm](https://img.shields.io/npm/dt/postcss-at-rules-variables.svg?style=flat-square)](https://www.npmjs.com/package/postcss-at-rules-variables)[![Package Quality](http://npm.packagequality.com/shield/postcss-at-rules-variables.svg?style=flat-square)](http://packagequality.com/#?package=postcss-at-rules-variables)[![BADGINATOR](https://badginator.herokuapp.com/gitscrum/postcss-at-rules-variables.svg?style=flat-square)](https://github.com/gitscrum/postcss-at-rules-variables)
 
-Used in conjunction with the plugin [postcss-each], [postcss-conditionals], [postcss-for] and more at-rules plugins.
+> [PostCSS](https://github.com/postcss/postcss) plugin to transform [W3C CSS Custom Properties](http://www.w3.org/TR/css-variables/) for at-rule’s parameters.
+*Used in conjunction with the plugin [postcss-each], [postcss-conditionals], [postcss-for] and more at-rules plugins.*
 
 
 ```css
@@ -64,18 +65,23 @@ h2 {
 html {
     background-color: red;
 }
+
 .some-class {
     color: #fff;
-    .icon-1 {
-        background-position: 0 1px;
-    }
-    .icon-3 {
-        background-position: 0 3px;
-    }
 }
+
+.some-class .icon-1 {
+    background-position: 0 1px;
+}
+
+.some-class .icon-3 {
+    background-position: 0 3px;
+}
+
 h1 {
     font-size: 24px;
 }
+
 h2 {
     color: olive;
 }
@@ -101,6 +107,7 @@ var atVariables = require("postcss-at-rules-variables");
 var atIf = require('postcss-conditionals');
 var atFor = require('postcss-for');
 var customProperties = require("postcss-custom-properties");
+var nested = require('postcss-nested');
 
 
 // css to be processed
@@ -119,6 +126,7 @@ var output = postcss()
   .use(atFor())
   .use(atIf())
   .use(customProperties())
+  .use(nested())
   .process(css, {
     from: "css/input.css"
   })
