@@ -1,8 +1,7 @@
 sudo: false
 language: node_js
 node_js:
-  - "5.1.0"
-  - "4.2.2"
+  - "6"
 
 after_script:
   - './node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls'

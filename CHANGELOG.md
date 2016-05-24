@@ -1,3 +1,17 @@
+## [0.0.22] - 24-05-2016
+### Added
+- Added #65, files to pkg.json
+- Added #60, eslint-formatter-pretty
+- Added #65, eslint-plugin-xo
+
+### Change
+- Change #66, babel preset to node6
+- Update #59, readme
+- Chnage #56, xo to eslint
+
+### Fixed
+- Fixed linter report error
+
 ## [0.0.21] - 07-04-2016
 ### Change
 - Update #51, devDep and dev
