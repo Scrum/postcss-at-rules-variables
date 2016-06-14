@@ -53,7 +53,7 @@
     "eslint-plugin-babel": "^3.2.0",
     "eslint-plugin-require-path-exists": "^1.1.5",
     "eslint-plugin-xo": "^0.4.3",
-    "nyc": "^6.2.1",
+    "nyc": "^6.6.0",
     "updtr": "^0.1.10"
   },
   "babel": {
