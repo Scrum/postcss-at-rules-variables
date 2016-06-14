@@ -1,3 +1,8 @@
+## [0.0.23] - 14-06-2016
+### Change
+- Change #70, babel preset
+- Update small core
+
 ## [0.0.22] - 24-05-2016
 ### Added
 - Added #65, files to pkg.json
