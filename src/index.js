@@ -21,8 +21,7 @@ function getProperty(nodes) {
 			return;
 		}
 
-		rule.each(decl => {
-			const {prop, value} = decl;
+		rule.each(({prop, value}) => {
 			propertys[prop] = value;
 		});
 	});
