@@ -1,11 +1,11 @@
 {
   "name": "postcss-at-rules-variables",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "description": "PostCss plugin to use CSS Custom Properties in at-rule @each, @for, @if, @else ",
   "main": "lib/index.js",
   "files": "lib/index.js",
   "engines": {
-    "node": ">=6"
+    "node": ">=4"
   },
   "scripts": {
     "test": "eslint --format=node_modules/eslint-formatter-pretty ./src/*.js ./test/*.js && nyc ava",
