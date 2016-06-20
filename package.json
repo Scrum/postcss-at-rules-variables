@@ -41,7 +41,7 @@
     "ava": "^0.15.0",
     "ava-codemods": "^0.2.1",
     "babel-cli": "^6.6.5",
-    "babel-eslint": "^6.0.4",
+    "babel-eslint": "^6.0.5",
     "babel-plugin-add-module-exports": "^0.2.0",
     "babel-preset-es2015-node": "^6.1.0",
     "babel-register": "^6.7.2",
