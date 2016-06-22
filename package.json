@@ -43,7 +43,7 @@
     "babel-cli": "^6.6.5",
     "babel-eslint": "^6.0.5",
     "babel-plugin-add-module-exports": "^0.2.0",
-    "babel-preset-es2015-node": "^6.1.0",
+    "babel-preset-es2015": "^6.9.0",
     "babel-register": "^6.7.2",
     "coveralls": "^2.11.9",
     "eslint": "^2.10.2",
@@ -58,7 +58,7 @@
   },
   "babel": {
     "presets": [
-      "es2015-node"
+      "es2015"
     ],
     "plugins": [
       "add-module-exports"
