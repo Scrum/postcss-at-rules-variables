@@ -54,6 +54,7 @@
     "babel-eslint": "^6.0.5",
     "babel-plugin-add-module-exports": "^0.2.0",
     "babel-preset-es2015": "^6.9.0",
+    "babel-preset-min": "^0.1.5",
     "babel-register": "^6.7.2",
     "coveralls": "^2.11.9",
     "eslint": "^2.10.2",
@@ -69,11 +70,15 @@
   },
   "babel": {
     "presets": [
-      "es2015"
+      "es2015",
+      "min"
     ],
     "plugins": [
       "add-module-exports"
-    ]
+    ],
+    "comments": false,
+    "compact": true,
+    "minified": true
   },
   "ava": {
     "require": [
