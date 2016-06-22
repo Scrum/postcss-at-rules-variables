@@ -1,3 +1,14 @@
+## [0.0.24] - 22-06-2016
+### Added 
+- Added testen
+- Added #53, babel minify preset
+
+### Change
+- Up support node version
+
+### Fixed
+- Fixed #76, Unexpected token {
+
 ## [0.0.23] - 14-06-2016
 ### Change
 - Change #70, babel preset
