@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "files": "lib/index.js",
   "engines": {
-    "node": ">=0.10"
+    "node": ">=4"
   },
   "scripts": {
     "test": "eslint --format=node_modules/eslint-formatter-pretty ./src/*.js ./test/*.js && nyc ava",
@@ -17,8 +17,6 @@
   },
   "testen": {
     "node": [
-      "0.10",
-      "0.12",
       "4",
       "5",
       "6"
