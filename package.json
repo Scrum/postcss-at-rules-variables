@@ -64,7 +64,7 @@
     "eslint-plugin-xo": "^0.5.0",
     "nyc": "^6.6.0",
     "testen": "^1.8.2",
-    "updtr": "^0.2.0"
+    "updtr": "^0.2.1"
   },
   "babel": {
     "presets": [
