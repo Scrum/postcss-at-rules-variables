@@ -100,38 +100,37 @@ Use postcss-at-rules-variables before you at-rules plugin
 
 ```js
 // dependencies
-var fs = require("fs");
-var postcss = require("postcss");
-var atImport = require("postcss-import");
-var atEach = require("postcss-each");
-var atVariables = require("postcss-at-rules-variables");
+var fs = require('fs');
+var postcss = require('postcss');
+var atImport = require('postcss-import');
+var atEach = require('postcss-each');
+var atVariables = require('postcss-at-rules-variables');
 var atIf = require('postcss-conditionals');
 var atFor = require('postcss-for');
-var customProperties = require("postcss-custom-properties");
+var customProperties = require('postcss-custom-properties');
 var nested = require('postcss-nested');
 
-
 // css to be processed
-var css = fs.readFileSync("css/input.css", "utf8");
+var css = fs.readFileSync('css/input.css', 'utf8');
 
 // process css
 var output = postcss()
-  .use(atVariables({ /* options */ }))
-  .use(atEach())
-  .use(atImport({
-    plugins: [
-        require("postcss-at-rules-variables")({ /* options */ }),
-        require("postcss-import")
-    ]
-  }))
-  .use(atFor())
-  .use(atIf())
-  .use(customProperties())
-  .use(nested())
-  .process(css, {
-    from: "css/input.css"
-  })
-  .css;
+    .use(atVariables({ /* options */ }))
+    .use(atEach())
+    .use(atImport({
+        plugins: [
+            require('postcss-at-rules-variables')({ /* options */ }),
+            require('postcss-import')
+        ]
+    }))
+    .use(atFor())
+    .use(atIf())
+    .use(customProperties())
+    .use(nested())
+    .process(css, {
+        from: 'css/input.css'
+    })
+    .css;
 
 console.log(output);
 ```
