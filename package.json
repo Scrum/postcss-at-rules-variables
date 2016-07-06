@@ -1,6 +1,6 @@
 {
   "name": "postcss-at-rules-variables",
-  "version": "0.0.24",
+  "version": "0.0.25",
   "description": "PostCss plugin to use CSS Custom Properties in at-rule @each, @for, @if, @else ",
   "main": "lib/index.js",
   "files": [
@@ -15,7 +15,7 @@
     "pretest": "npm run lintjs && npm run lintmd",
     "test": "nyc ava",
     "clean": "rm -rf lib && mkdir lib",
-    "build": "npm run clean && babel src/index.js --out-file lib/index.js",
+    "build": "npm run clean && babel src/ -d lib/",
     "prepublish": "npm run build",
     "update": "updtr && ava-codemods --force",
     "testen": "testen -n -- ava"
