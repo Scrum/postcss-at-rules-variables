@@ -78,8 +78,7 @@
   },
   "babel": {
     "presets": [
-      "es2015",
-      "min"
+      "es2015"
     ],
     "plugins": [
       "add-module-exports"
