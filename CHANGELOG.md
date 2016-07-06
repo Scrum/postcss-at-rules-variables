@@ -1,3 +1,8 @@
+## [0.0.25] - 06-07-2016
+### Change
+- Update keywords, author and files data in pkg.json
+- Update devDep
+
 ## [0.0.24] - 22-06-2016
 ### Added 
 - Added testen
