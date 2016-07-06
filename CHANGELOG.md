@@ -1,7 +1,13 @@
 ## [0.0.25] - 06-07-2016
+### Added
+- Added #91, eslint markdown
+
 ### Change
 - Update keywords, author and files data in pkg.json
 - Update devDep
+
+### Fixed
+- Fixed linter report error in readme
 
 ## [0.0.24] - 22-06-2016
 ### Added 
