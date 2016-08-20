@@ -55,7 +55,7 @@
     "postcss": "^5.0.21"
   },
   "devDependencies": {
-    "ava": "^0.15.2",
+    "ava": "^0.16.0",
     "ava-codemods": "^0.2.1",
     "babel-cli": "^6.10.1",
     "babel-eslint": "^6.1.0",
