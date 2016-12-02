@@ -37,7 +37,7 @@ var css = fs.readFileSync('css/input.css', 'utf8');
 
 // process css
 var output = postcss()
-    .use(atVariables({ /* options */ }))
+    .use(atVariables({ /* atRules: ['media'] */ }))
     .use(atEach())
     .use(atImport({
         plugins: [
