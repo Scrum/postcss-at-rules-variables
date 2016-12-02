@@ -2,10 +2,16 @@
   "name": "postcss-at-rules-variables",
   "version": "0.0.25",
   "description": "PostCss plugin to use CSS Custom Properties in at-rule @each, @for, @if, @else ",
+  "license": "MIT",
+  "repository": "gitscrum/postcss-at-rules-variables",
+  "homepage": "gitscrum/postcss-at-rules-variables#readme",
+  "bugs": "gitscrum/postcss-at-rules-variables/issues",
+  "author": {
+    "name": "Ivan Demidov",
+    "email": "Scrum@list.ru",
+    "url": "https://twitter.com/Scrum_"
+  },
   "main": "lib/index.js",
-  "files": [
-    "lib/"
-  ],
   "engines": {
     "node": ">=4"
   },
@@ -21,13 +27,9 @@
     "update": "updtr && ava-codemods --force",
     "testen": "testen -n -- ava"
   },
-  "testen": {
-    "node": [
-      "4",
-      "5",
-      "6"
-    ]
-  },
+  "files": [
+    "lib/"
+  ],
   "keywords": [
     "postcss",
     "css",
@@ -41,22 +43,12 @@
     "rules",
     "property"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/GitScrum/postcss-at-rules-variables.git"
-  },
-  "author": {
-    "name": "GitScrum",
-    "email": "Scrum@list.ru",
-    "url": "https://twitter.com/Scrum_"
-  },
-  "license": "MIT",
   "dependencies": {
     "lodash": "^4.16.5",
     "postcss": "^5.0.21"
   },
   "devDependencies": {
-    "ava": "^0.17.0",
+    "ava": "*",
     "ava-codemods": "^0.3.0",
     "babel-cli": "^6.10.1",
     "babel-eslint": "^7.0.0",
@@ -80,6 +72,13 @@
     "nyc": "^10.0.0",
     "testen": "^1.8.2",
     "updtr": "^0.2.1"
+  },
+  "testen": {
+    "node": [
+      "4",
+      "5",
+      "6"
+    ]
   },
   "babel": {
     "presets": [
@@ -113,8 +112,20 @@
       "plugin:ava/recommended"
     ]
   },
-  "bugs": {
-    "url": "https://github.com/gitscrum/postcss-at-rules-variables/issues"
-  },
-  "homepage": "https://github.com/gitscrum/postcss-at-rules-variables#readme"
+  "clinton": {
+    "ignores": [
+      "test/**",
+      "tmp/**",
+      "lib/**",
+      "*.{html,jpg}"
+    ],
+    "rules": {
+      "pkg-main": [
+        "off"
+      ],
+      "xo": [
+        "off"
+      ]
+    }
+  }
 }
