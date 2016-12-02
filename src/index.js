@@ -1,5 +1,4 @@
 import postcss from 'postcss';
-import {mergeWith} from 'lodash';
 
 function hasVar(str) {
 	return str.indexOf('var(');
@@ -29,22 +28,15 @@ function getProperty(nodes) {
 	return propertys;
 }
 
-export default postcss.plugin('postcss-at-rules-variables', options => {
-	const DEFAULT = {
-		atRules: ['for', 'if', 'else', 'each']
+export default postcss.plugin('postcss-at-rules-variables', (options = {}) => {
+	options = {
+		atRules: [...new Set(['for', 'if', 'else', 'each', ...options.atRules || ''])]
 	};
-
-	const opt = mergeWith(DEFAULT, options, (a, b) => {
-		if (Array.isArray(a)) {
-			return a.concat(b);
-		}
-	});
 
 	return nodes => {
 		const maps = getProperty(nodes);
-		const {atRules} = opt;
 
-		nodes.walkAtRules(new RegExp(atRules.join('|')), rules => {
+		nodes.walkAtRules(new RegExp(options.atRules.join('|')), rules => {
 			rules.params = resolveValue(rules.params, maps);
 		});
 	};

@@ -47,7 +47,6 @@
     "property"
   ],
   "dependencies": {
-    "lodash": "^4.16.5",
     "postcss": "^5.0.21"
   },
   "devDependencies": {
