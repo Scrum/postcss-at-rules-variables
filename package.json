@@ -48,7 +48,7 @@
     "property"
   ],
   "dependencies": {
-    "postcss": "^5.0.21"
+    "postcss": "^5.2.8"
   },
   "devDependencies": {
     "ava": "*",
