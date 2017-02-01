@@ -53,3 +53,9 @@ test('it without variables', t => {
 	const value = ':root{ --red: red; } @if var(--green) { color: var(--green) }';
 	t.is(processing(value), expected);
 });
+
+test('should change for @custom-media', t => {
+	const expected = ':root{ --breakpoint-xs: 29.25em } @custom-media --viewport-xs (width > 29.25em)';
+	const value = ':root{ --breakpoint-xs: 29.25em } @custom-media --viewport-xs (width > var(--breakpoint-xs))';
+	t.is(processing(value, {atRules: ['custom-media']}), expected);
+});
