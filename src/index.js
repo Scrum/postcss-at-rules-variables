@@ -30,7 +30,7 @@ function getProperty(nodes) {
 
 export default postcss.plugin('postcss-at-rules-variables', (options = {}) => {
 	options = {
-		atRules: [...new Set(['for', 'if', 'else', 'each', ...options.atRules || ''])]
+		atRules: [...new Set(['for', 'if', 'else', 'each', 'mixin', 'custom-media', ...options.atRules || ''])]
 	};
 
 	return nodes => {
