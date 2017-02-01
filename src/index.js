@@ -1,15 +1,11 @@
 import postcss from 'postcss';
 
 function hasVar(str) {
-	return str.indexOf('var(');
+	return str.includes('var(');
 }
 
 function resolveValue(value, maps) {
-	if (hasVar(value) === -1) {
-		return value;
-	}
-
-	return value.replace(/var\(--.*?\)/g, match => maps[match.slice(4, -1)] || match);
+	return hasVar(value) ? value.replace(/var\(--.*?\)/g, match => maps[match.slice(4, -1)] || match) : value;
 }
 
 function getProperty(nodes) {
