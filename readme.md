@@ -146,7 +146,7 @@ h2 {
 #### `atRules`
 
 Type: `Array`  
-Default: `['for', 'if', 'else', 'each']`  
+Default: `['for', 'if', 'else', 'each', 'mixin', 'custom-media']`  
 Description: *The array used in all at-rules in your project*
 
 ## LICENSE
