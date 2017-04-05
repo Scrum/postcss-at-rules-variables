@@ -21,7 +21,7 @@ $ npm install postcss-at-rules-variables
 ## Usage
 
 ```js
-// dependencies
+// Dependencies
 var fs = require('fs');
 var postcss = require('postcss');
 var atImport = require('postcss-import');
@@ -32,10 +32,10 @@ var atFor = require('postcss-for');
 var customProperties = require('postcss-custom-properties');
 var nested = require('postcss-nested');
 
-// css to be processed
+// CSS to be processed
 var css = fs.readFileSync('css/input.css', 'utf8');
 
-// process css
+// Process CSS
 var output = postcss()
     .use(atVariables({ /* atRules: ['media'] */ }))
     .use(atEach())
