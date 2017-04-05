@@ -26,11 +26,12 @@ function getProperty(nodes) {
 
 export default postcss.plugin('postcss-at-rules-variables', (options = {}) => {
 	options = {
-		atRules: [...new Set(['for', 'if', 'else', 'each', 'mixin', 'custom-media', ...options.atRules || ''])]
+		atRules: [...new Set(['for', 'if', 'else', 'each', 'mixin', 'custom-media', ...options.atRules || ''])],
+		variables: options.variables || {}
 	};
 
 	return nodes => {
-		const maps = getProperty(nodes);
+		const maps = Object.assign(getProperty(nodes), options.variables);
 
 		nodes.walkAtRules(new RegExp(options.atRules.join('|')), rules => {
 			rules.params = resolveValue(rules.params, maps);
