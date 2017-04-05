@@ -149,6 +149,12 @@ Type: `Array`
 Default: `['for', 'if', 'else', 'each', 'mixin', 'custom-media']`  
 Description: *The array used in all at-rules in your project*
 
+#### `variables`
+
+Type: `Object`  
+Default: `{}`  
+Description: *Allows you to pass an object of variables for `:root`. These definitions will override any that exist in the CSS*
+
 ## LICENSE
 
 > MIT License (MIT)
