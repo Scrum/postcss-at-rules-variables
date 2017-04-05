@@ -1,3 +1,25 @@
+<a name="0.1.0"></a>
+# 0.1.0 (2017-04-05)
+
+* 0.1.0 ([aecb563](https://github.com/gitscrum/postcss-at-rules-variables/commit/aecb563))
+* style(readme): fix linting ([86d8219](https://github.com/gitscrum/postcss-at-rules-variables/commit/86d8219))
+* style(readme): remove testen badges ([e5c9162](https://github.com/gitscrum/postcss-at-rules-variables/commit/e5c9162))
+* docs(readme): add description for #153 ([c0ae1ed](https://github.com/gitscrum/postcss-at-rules-variables/commit/c0ae1ed))
+* test(test): add test for #153 ([11ae22d](https://github.com/gitscrum/postcss-at-rules-variables/commit/11ae22d))
+* feat(index): add programmatically-defined variables, #153 ([d1d3800](https://github.com/gitscrum/postcss-at-rules-variables/commit/d1d3800))
+* chore(changelog): Update changelog ([0bfcb24](https://github.com/gitscrum/postcss-at-rules-variables/commit/0bfcb24))
+* chore(package): update ava-codemods to version 0.3.2 ([0b07f87](https://github.com/gitscrum/postcss-at-rules-variables/commit/0b07f87))
+* chore(package): update babel-preset-babili to version 0.0.11 ([4920d1f](https://github.com/gitscrum/postcss-at-rules-variables/commit/4920d1f))
+* chore(package): update babel-preset-env to version 1.3.2 ([d2990cb](https://github.com/gitscrum/postcss-at-rules-variables/commit/d2990cb))
+* chore(package): update clean and build script ([3748c21](https://github.com/gitscrum/postcss-at-rules-variables/commit/3748c21))
+* chore(package): update conventional-changelog-lint to version 1.1.8 ([9a03d4c](https://github.com/gitscrum/postcss-at-rules-variables/commit/9a03d4c))
+* chore(package): update coveralls to version 2.13.0 ([ed57585](https://github.com/gitscrum/postcss-at-rules-variables/commit/ed57585))
+* chore(package): update depDev ([31640b9](https://github.com/gitscrum/postcss-at-rules-variables/commit/31640b9))
+* chore(package): update eslint to version 3.19.0 ([e6debca](https://github.com/gitscrum/postcss-at-rules-variables/commit/e6debca))
+* chore(package): update updtr to version 1.0.0 ([2219b61](https://github.com/gitscrum/postcss-at-rules-variables/commit/2219b61))
+
+
+
 <a name="0.0.27"></a>
 ## 0.0.27 (2017-02-01)
 

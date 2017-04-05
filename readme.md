@@ -1,7 +1,7 @@
 # postcss-at-rules-variables <a href="https://github.com/postcss/postcss"><img align="left" height="49" title="PostCSS" src="http://postcss.github.io/postcss/logo.svg"></a>
 > [PostCSS](https://github.com/postcss/postcss) plugin to transform [W3C CSS Custom Properties](http://www.w3.org/TR/css-variables/) for at-rule’s parameters.
 
-[![Travis Build Status](https://img.shields.io/travis/GitScrum/postcss-at-rules-variables.svg?style=flat-square&label=unix)](https://travis-ci.org/GitScrum/postcss-at-rules-variables)[![AppVeyor Build Status](https://img.shields.io/appveyor/ci/GitScrum/postcss-at-rules-variables.svg?style=flat-square&label=windows)](https://ci.appveyor.com/project/GitScrum/postcss-at-rules-variables)[![testen badge](https://img.shields.io/badge/testen-passing-brightgreen.svg?style=flat-square)][testen repo][![node](https://img.shields.io/node/v/postcss-at-rules-variables.svg?maxAge=2592000&style=flat-square)]()[![npm version](https://img.shields.io/npm/v/postcss-at-rules-variables.svg?style=flat-square)](https://www.npmjs.com/package/postcss-at-rules-variables)[![Dependency Status](https://david-dm.org/gitscrum/postcss-at-rules-variables.svg?style=flat-square)](https://david-dm.org/gitscrum/postcss-at-rules-variables)[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square)](https://github.com/sindresorhus/xo)[![Coveralls status](https://img.shields.io/coveralls/GitScrum/postcss-at-rules-variables.svg?style=flat-square)](https://coveralls.io/r/GitScrum/postcss-at-rules-variables)
+[![Travis Build Status](https://img.shields.io/travis/GitScrum/postcss-at-rules-variables/master.svg?style=flat-square&label=unix)](https://travis-ci.org/GitScrum/postcss-at-rules-variables)[![AppVeyor Build Status](https://img.shields.io/appveyor/ci/GitScrum/postcss-at-rules-variables/master.svg?style=flat-square&label=windows)](https://ci.appveyor.com/project/GitScrum/postcss-at-rules-variables)[![node](https://img.shields.io/node/v/postcss-at-rules-variables.svg?maxAge=2592000&style=flat-square)]()[![npm version](https://img.shields.io/npm/v/postcss-at-rules-variables.svg?style=flat-square)](https://www.npmjs.com/package/postcss-at-rules-variables)[![Dependency Status](https://david-dm.org/gitscrum/postcss-at-rules-variables.svg?style=flat-square)](https://david-dm.org/gitscrum/postcss-at-rules-variables)[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square)](https://github.com/sindresorhus/xo)[![Coveralls status](https://img.shields.io/coveralls/GitScrum/postcss-at-rules-variables.svg?style=flat-square)](https://coveralls.io/r/GitScrum/postcss-at-rules-variables)
 
 [![npm downloads](https://img.shields.io/npm/dm/postcss-at-rules-variables.svg?style=flat-square)](https://www.npmjs.com/package/postcss-at-rules-variables)[![npm](https://img.shields.io/npm/dt/postcss-at-rules-variables.svg?style=flat-square)](https://www.npmjs.com/package/postcss-at-rules-variables)[![Package Quality](http://npm.packagequality.com/shield/postcss-at-rules-variables.svg?style=flat-square)](http://packagequality.com/#?package=postcss-at-rules-variables)[![BADGINATOR](https://badginator.herokuapp.com/gitscrum/postcss-at-rules-variables.svg?style=flat-square)](https://github.com/gitscrum/postcss-at-rules-variables)
 
@@ -21,7 +21,7 @@ $ npm install postcss-at-rules-variables
 ## Usage
 
 ```js
-// dependencies
+// Dependencies
 var fs = require('fs');
 var postcss = require('postcss');
 var atImport = require('postcss-import');
@@ -32,10 +32,10 @@ var atFor = require('postcss-for');
 var customProperties = require('postcss-custom-properties');
 var nested = require('postcss-nested');
 
-// css to be processed
+// CSS to be processed
 var css = fs.readFileSync('css/input.css', 'utf8');
 
-// process css
+// Process CSS
 var output = postcss()
     .use(atVariables({ /* atRules: ['media'] */ }))
     .use(atEach())
@@ -148,6 +148,12 @@ h2 {
 Type: `Array`  
 Default: `['for', 'if', 'else', 'each', 'mixin', 'custom-media']`  
 Description: *The array used in all at-rules in your project*
+
+#### `variables`
+
+Type: `Object`  
+Default: `{}`  
+Description: *Allows you to pass an object of variables for `:root`. These definitions will override any that exist in the CSS*
 
 ## LICENSE
 

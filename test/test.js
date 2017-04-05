@@ -54,6 +54,15 @@ test('it without variables', t => {
 	t.is(processing(value), expected);
 });
 
+test('chould change from options variables', t => {
+	const expected = '@if green { .text-green { color: var(--green) }}';
+	const value = '@if var(--green) { .text-green { color: var(--green) }}';
+	const variables = {
+		'--green': 'green'
+	};
+	t.is(processing(value, {variables: variables}), expected);
+});
+
 test('should change for @custom-media', t => {
 	const expected = ':root{ --breakpoint-xs: 29.25em } @custom-media --viewport-xs (width > 29.25em)';
 	const value = ':root{ --breakpoint-xs: 29.25em } @custom-media --viewport-xs (width > var(--breakpoint-xs))';
