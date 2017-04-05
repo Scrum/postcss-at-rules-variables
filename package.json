@@ -61,7 +61,7 @@
     "babel-register": "^6.22.0",
     "clinton": "^0.11.0",
     "conventional-changelog-cli": "^1.2.0",
-    "conventional-changelog-lint": "^1.1.0",
+    "conventional-changelog-lint": "^1.1.8",
     "coveralls": "^2.11.9",
     "eslint": "^3.14.1",
     "eslint-config-xo": "^0.17.0",
