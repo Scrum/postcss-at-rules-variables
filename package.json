@@ -1,6 +1,6 @@
 {
   "name": "postcss-at-rules-variables",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "PostCss plugin to use CSS Custom Properties in at-rule @each, @for, @if, @else ",
   "license": "MIT",
   "repository": "gitscrum/postcss-at-rules-variables",
