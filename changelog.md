@@ -1,3 +1,20 @@
+<a name="0.1.1"></a>
+## 0.1.1 (2017-05-12)
+
+* 0.1.1 ([4d9efd4](https://github.com/gitscrum/postcss-at-rules-variables/commit/4d9efd4))
+* chore: Deleted unused packages ([9405a80](https://github.com/gitscrum/postcss-at-rules-variables/commit/9405a80))
+* chore: fix version for eslint-plugin-require-path-exists ([22a3cc0](https://github.com/gitscrum/postcss-at-rules-variables/commit/22a3cc0))
+* chore(changelog): Update changelog ([56d017d](https://github.com/gitscrum/postcss-at-rules-variables/commit/56d017d))
+* chore(package): update ava to version 0.19.1 ([cd730c8](https://github.com/gitscrum/postcss-at-rules-variables/commit/cd730c8))
+* chore(package): update babel-cli to version 6.24.1 ([9b422f9](https://github.com/gitscrum/postcss-at-rules-variables/commit/9b422f9))
+* chore(package): update babel-register to version 6.24.1 ([9c6e652](https://github.com/gitscrum/postcss-at-rules-variables/commit/9c6e652))
+* chore(package): update clinton to version 0.12.0 ([df96377](https://github.com/gitscrum/postcss-at-rules-variables/commit/df96377))
+* chore(package): update np to version 2.14.1 ([71dce11](https://github.com/gitscrum/postcss-at-rules-variables/commit/71dce11))
+* chore(package): update nyc to version 10.3.2 ([cfafaf8](https://github.com/gitscrum/postcss-at-rules-variables/commit/cfafaf8))
+* chore(package): update postcss to version 6.0.1 ([e4d60eb](https://github.com/gitscrum/postcss-at-rules-variables/commit/e4d60eb))
+
+
+
 <a name="0.1.0"></a>
 # 0.1.0 (2017-04-05)
 
