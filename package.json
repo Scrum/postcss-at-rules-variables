@@ -1,6 +1,6 @@
 {
   "name": "postcss-at-rules-variables",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "PostCss plugin to use CSS Custom Properties in at-rule @each, @for, @if, @else ",
   "license": "MIT",
   "repository": "gitscrum/postcss-at-rules-variables",
@@ -26,9 +26,7 @@
     "lintjs": "eslint ./{src,test}/*.js",
     "lintmd": "eslint --ext md --rule indent: [error, 4] .",
     "pretest": "clinton && npm run lintjs && npm run lintmd",
-    "test": "nyc ava",
-    "update": "updtr",
-    "testen": "testen -n -- ava"
+    "test": "nyc ava"
   },
   "files": [
     "lib/"
@@ -47,18 +45,17 @@
     "property"
   ],
   "dependencies": {
-    "postcss": "^5.2.10"
+    "postcss": "^6.0.1"
   },
   "devDependencies": {
     "ava": "*",
-    "ava-codemods": "^0.3.2",
-    "babel-cli": "^6.22.2",
+    "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.1",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-babili": "^0.0.12",
     "babel-preset-env": "^1.3.2",
-    "babel-register": "^6.22.0",
-    "clinton": "^0.11.0",
+    "babel-register": "^6.24.1",
+    "clinton": "^0.12.0",
     "conventional-changelog-cli": "^1.3.1",
     "conventional-changelog-lint": "^1.1.8",
     "coveralls": "^2.13.0",
@@ -68,22 +65,11 @@
     "eslint-plugin-ava": "^4.0.1",
     "eslint-plugin-babel": "^4.0.1",
     "eslint-plugin-markdown": "^1.0.0-beta.4",
-    "eslint-plugin-require-path-exists": "^1.1.5",
     "eslint-plugin-xo": "^1.0.0",
     "husky": "^0.13.1",
-    "np": "^2.12.0",
-    "nyc": "^10.1.0",
-    "rimraf": "^2.6.1",
-    "testen": "^2.2.0",
-    "updtr": "^1.0.0"
-  },
-  "testen": {
-    "node": [
-      "4",
-      "5",
-      "6",
-      "7"
-    ]
+    "np": "^2.14.1",
+    "nyc": "^10.3.2",
+    "rimraf": "^2.6.1"
   },
   "babel": {
     "presets": [
@@ -113,7 +99,6 @@
       "ava",
       "xo",
       "babel",
-      "require-path-exists",
       "markdown"
     ],
     "extends": [
