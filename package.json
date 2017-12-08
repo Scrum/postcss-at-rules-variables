@@ -16,16 +16,11 @@
     "node": ">=4"
   },
   "scripts": {
-    "commitmsg": "conventional-changelog-lint -e",
-    "postpublish": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"chore(changelog): Update changelog\"",
-    "patch": "np patch --any-branch",
-    "minor": "np minor --any-branch",
-    "major": "np major --any-branch",
+    "precommit": "clinton && lint-staged",
+    "commitmsg": "commitlint --extends=@commitlint/config-angular -e",
+    "postpublish": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"build: update changelog\"",
+    "prepare": "npm run build",
     "build": "rimraf lib && babel src -d lib",
-    "prepublish": "npm run build",
-    "lintjs": "eslint ./{src,test}/*.js",
-    "lintmd": "eslint --ext md --rule indent: [error, 4] .",
-    "pretest": "clinton && npm run lintjs && npm run lintmd",
     "test": "nyc ava"
   },
   "files": [
@@ -48,28 +43,38 @@
     "postcss": "^6.0.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^5.2.0",
+    "@commitlint/config-angular": "^5.1.1",
     "ava": "*",
     "babel-cli": "^6.24.1",
     "babel-eslint": "^8.0.3",
     "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-babili": "^0.1.4",
     "babel-preset-env": "^1.3.2",
+    "babel-preset-minify": "^0.2.0",
     "babel-register": "^6.24.1",
     "clinton": "^0.13.0",
     "conventional-changelog-cli": "^1.3.1",
-    "conventional-changelog-lint": "^2.1.1",
     "coveralls": "^3.0.0",
     "eslint": "^4.12.0",
     "eslint-config-xo": "^0.19.0",
     "eslint-formatter-pretty": "^1.1.0",
     "eslint-plugin-ava": "^4.0.1",
     "eslint-plugin-babel": "^4.0.1",
-    "eslint-plugin-markdown": "^1.0.0-beta.4",
-    "eslint-plugin-xo": "^1.0.0",
+    "eslint-plugin-markdown": "^1.0.0-beta.7",
+    "eslint-plugin-unicorn": "^3.0.0",
     "husky": "^0.14.3",
-    "np": "^2.14.1",
+    "lint-staged": "^6.0.0",
     "nyc": "^11.3.0",
     "rimraf": "^2.6.1"
+  },
+  "lint-staged": {
+    "*.{js,html}": "eslint",
+    "./*.md": "eslint --rule indent: [error, 4] ."
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
   },
   "babel": {
     "presets": [
@@ -78,34 +83,43 @@
         {
           "targets": {
             "node": 4
-          }
+          },
+          "useBuiltIns": true
         }
       ],
-      "babili"
+      [
+        "minify",
+        {
+          "mangle": false
+        }
+      ]
     ],
     "plugins": [
       "add-module-exports"
     ]
   },
-  "ava": {
-    "require": [
-      "babel-register"
-    ]
-  },
   "eslintConfig": {
-    "format": "node_modules/eslint-formatter-pretty",
     "parser": "babel-eslint",
     "plugins": [
-      "ava",
-      "xo",
+      "html",
+      "unicorn",
       "babel",
       "markdown"
     ],
     "extends": [
-      "xo",
-      "plugin:xo/recommended",
-      "plugin:ava/recommended"
-    ]
+      "plugin:unicorn/recommended",
+      "xo"
+    ],
+    "rules": {
+      "indent": [
+        2,
+        4,
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "capitalized-comments": "off"
+    }
   },
   "clinton": {
     "ignores": [
