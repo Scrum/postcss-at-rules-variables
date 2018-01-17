@@ -16,6 +16,7 @@
     "node": ">=4"
   },
   "scripts": {
+    "prepush": "npm t",
     "precommit": "clinton && lint-staged",
     "commitmsg": "commitlint --extends=@commitlint/config-angular -e",
     "postpublish": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"build: update changelog\"",
