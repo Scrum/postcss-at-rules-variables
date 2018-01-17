@@ -11,8 +11,5 @@ insert_final_newline = true
 [{package.json,*.yml}]
 indent_size = 2
 
-[*.js]
-indent_style = tab
-
 [*.md]
 trim_trailing_whitespace = false
