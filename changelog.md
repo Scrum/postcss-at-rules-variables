@@ -1,3 +1,22 @@
+<a name="0.1.3"></a>
+## 0.1.3 (2018-01-17)
+
+* 0.1.3 ([15a0bae](https://github.com/gitscrum/postcss-at-rules-variables/commit/15a0bae))
+* test: fix test for issue #181, pkg should not change source ([7e7c178](https://github.com/gitscrum/postcss-at-rules-variables/commit/7e7c178)), closes [#181](https://github.com/gitscrum/postcss-at-rules-variables/issues/181)
+* test: for issue #181 ([7c8b7d4](https://github.com/gitscrum/postcss-at-rules-variables/commit/7c8b7d4)), closes [#181](https://github.com/gitscrum/postcss-at-rules-variables/issues/181)
+* test: return comment test ) ([2261694](https://github.com/gitscrum/postcss-at-rules-variables/commit/2261694))
+* build: add lint before push ([da9fdd3](https://github.com/gitscrum/postcss-at-rules-variables/commit/da9fdd3))
+* build: fix lint for md ([8a5c787](https://github.com/gitscrum/postcss-at-rules-variables/commit/8a5c787))
+* build: update changelog ([01ed61f](https://github.com/gitscrum/postcss-at-rules-variables/commit/01ed61f))
+* build: update depDev ([87e70de](https://github.com/gitscrum/postcss-at-rules-variables/commit/87e70de))
+* docs: remove licence from readme ([d692765](https://github.com/gitscrum/postcss-at-rules-variables/commit/d692765))
+* docs: update example ([31a61cd](https://github.com/gitscrum/postcss-at-rules-variables/commit/31a61cd))
+* fix: circular reference, close #181 ([3badc9c](https://github.com/gitscrum/postcss-at-rules-variables/commit/3badc9c)), closes [#181](https://github.com/gitscrum/postcss-at-rules-variables/issues/181)
+* fix: eslint requested eslint-plugin-html ([09cdfdc](https://github.com/gitscrum/postcss-at-rules-variables/commit/09cdfdc))
+* style: forgot change to space ([2407fdc](https://github.com/gitscrum/postcss-at-rules-variables/commit/2407fdc))
+
+
+
 <a name="0.1.2"></a>
 ## 0.1.2 (2017-12-08)
 
