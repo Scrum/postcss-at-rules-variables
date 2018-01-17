@@ -24,6 +24,7 @@ $ npm install postcss-at-rules-variables
 // Dependencies
 var fs = require('fs');
 var postcss = require('postcss');
+var colorFunction = require('postcss-color-function');
 var atImport = require('postcss-import');
 var atEach = require('postcss-each');
 var atVariables = require('postcss-at-rules-variables');
@@ -38,6 +39,7 @@ var css = fs.readFileSync('css/input.css', 'utf8');
 // Process CSS
 var output = postcss()
     .use(atVariables({ /* atRules: ['media'] */ }))
+    .use(colorFunction())
     .use(atEach())
     .use(atImport({
         plugins: [
@@ -56,7 +58,7 @@ var output = postcss()
 
 console.log(output);
 ```
-*Use postcss-at-rules-variables before you at-rules plugins*
+> *Use postcss-at-rules-variables before you at-rules plugins*
 
 # Example
 
@@ -68,6 +70,7 @@ console.log(output);
     --to: 3;
     --icon-exclude: 2;
     --color-danger: red;
+    --nested-variable: color(var(--color-danger) a(90%)) ;
 }
 
 @each $val in var(--array) {
@@ -79,6 +82,7 @@ console.log(output);
 /* foo.css */
 html {
     background-color: var(--color-danger);
+    color: var(--nested-variable);
 }
 ```
 
@@ -117,6 +121,7 @@ h2 {
 /* Output example */
 html {
     background-color: red;
+    color: rgba(255, 0, 0, 0.9);
 }
 
 .some-class {
