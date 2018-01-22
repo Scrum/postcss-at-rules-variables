@@ -1,3 +1,14 @@
+<a name="0.1.4"></a>
+## 0.1.4 (2018-01-22)
+
+* 0.1.4 ([c39cf5a](https://github.com/gitscrum/postcss-at-rules-variables/commit/c39cf5a))
+* fix: issue #183 ([9edfd7c](https://github.com/gitscrum/postcss-at-rules-variables/commit/9edfd7c)), closes [#183](https://github.com/gitscrum/postcss-at-rules-variables/issues/183)
+* test: for issue #183 ([7152277](https://github.com/gitscrum/postcss-at-rules-variables/commit/7152277)), closes [#183](https://github.com/gitscrum/postcss-at-rules-variables/issues/183)
+* test: for issue #183 with rule ([1bce741](https://github.com/gitscrum/postcss-at-rules-variables/commit/1bce741)), closes [#183](https://github.com/gitscrum/postcss-at-rules-variables/issues/183)
+* build: update changelog ([6d1c8bf](https://github.com/gitscrum/postcss-at-rules-variables/commit/6d1c8bf))
+
+
+
 <a name="0.1.3"></a>
 ## 0.1.3 (2018-01-17)
 

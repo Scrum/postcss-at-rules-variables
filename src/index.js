@@ -16,8 +16,10 @@ function getProperty(nodes) {
             return;
         }
 
-        rule.each(({prop, value}) => {
-            propertys[prop] = value;
+        rule.each(({type, prop, value}) => {
+            if (type === 'decl') {
+                propertys[prop] = value;
+            }
         });
     });
 
