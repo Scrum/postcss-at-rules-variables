@@ -12,6 +12,12 @@ test('it change circular reference', t => {
     t.is(processing(value), expected);
 });
 
+test('it should not throw error', t => {
+    const expected = ':root{ --from: 1; /* comment */ }';
+    const value = ':root{ --from: 1; /* comment */ }';
+    t.is(processing(value), expected);
+});
+
 test('it change first properties for @for', t => {
     const expected = ':root{ --from: 1; } @for $i from 1 to 2';
     const value = ':root{ --from: 1; } @for $i from var(--from) to 2';
