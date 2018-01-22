@@ -12,9 +12,15 @@ test('it change circular reference', t => {
     t.is(processing(value), expected);
 });
 
-test('it should not throw error', t => {
+test('it should not throw error if comment exists', t => {
     const expected = ':root{ --from: 1; /* comment */ }';
     const value = ':root{ --from: 1; /* comment */ }';
+    t.is(processing(value), expected);
+});
+
+test('it should not throw error if comment exists with rule', t => {
+    const expected = ':root{ --from: 1; /* comment */ } @for $i from 1 to 2';
+    const value = ':root{ --from: 1; /* comment */ } @for $i from var(--from) to 2';
     t.is(processing(value), expected);
 });
 
