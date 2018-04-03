@@ -3,9 +3,9 @@
   "version": "0.1.4",
   "description": "PostCss plugin to use CSS Custom Properties in at-rule @each, @for, @if, @else ",
   "license": "MIT",
-  "repository": "gitscrum/postcss-at-rules-variables",
-  "homepage": "gitscrum/postcss-at-rules-variables#readme",
-  "bugs": "gitscrum/postcss-at-rules-variables/issues",
+  "repository": "scrum/postcss-at-rules-variables",
+  "homepage": "scrum/postcss-at-rules-variables#readme",
+  "bugs": "scrum/postcss-at-rules-variables/issues",
   "author": {
     "name": "Ivan Demidov",
     "email": "Scrum@list.ru",
