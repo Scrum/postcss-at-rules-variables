@@ -44,15 +44,16 @@
     "postcss": "^6.0.21"
   },
   "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.44",
+    "@babel/core": "^7.0.0-beta.44",
+    "@babel/preset-env": "^7.0.0-beta.44",
+    "@babel/register": "^7.0.0-beta.44",
     "@commitlint/cli": "^6.1.3",
     "@commitlint/config-angular": "^6.1.3",
     "ava": "*",
-    "babel-cli": "^6.24.1",
     "babel-eslint": "^8.2.2",
     "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-env": "^1.3.2",
     "babel-preset-minify": "^0.3.0",
-    "babel-register": "^6.24.1",
     "clinton": "^0.13.0",
     "conventional-changelog-cli": "^1.3.21",
     "coveralls": "^3.0.0",
@@ -74,23 +75,23 @@
   },
   "ava": {
     "require": [
-      "babel-register"
+      "@babel/register"
     ]
   },
   "babel": {
     "presets": [
       [
-        "env",
+        "@babel/preset-env",
         {
           "targets": {
             "node": 4
-          },
-          "useBuiltIns": true
+          }
         }
       ],
       [
         "minify",
         {
+          "removeUndefined": false,
           "mangle": false
         }
       ]
