@@ -16,10 +16,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "prepush": "npm t",
-    "precommit": "clinton && lint-staged",
-    "commitmsg": "commitlint --extends=@commitlint/config-angular -e",
-    "postpublish": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"build: update changelog\"",
+    "version": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"build: update changelog\"",
     "prepare": "npm run build",
     "build": "rimraf lib && babel src -d lib",
     "test": "nyc ava"
@@ -65,10 +62,17 @@
     "eslint-plugin-html": "^4.0.5",
     "eslint-plugin-markdown": "^1.0.0-beta.7",
     "eslint-plugin-unicorn": "^5.0.0",
-    "husky": "^0.14.3",
+    "husky": "^1.0.0-rc.13",
     "lint-staged": "^7.2.2",
     "nyc": "^12.0.2",
     "rimraf": "^2.6.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm t",
+      "pre-commit": "clinton && lint-staged",
+      "commit-msg": "commitlint --extends=@commitlint/config-angular -e"
+    }
   },
   "lint-staged": {
     "{src,test}/**/*.js": "eslint",
