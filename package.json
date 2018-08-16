@@ -13,7 +13,7 @@
   },
   "main": "lib/index.js",
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "scripts": {
     "version": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"build: update changelog\"",

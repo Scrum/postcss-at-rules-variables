@@ -16,7 +16,7 @@ Adds the ability to use a custom property in the options, at-rules.
 $ npm install postcss-at-rules-variables
 ```
 
-> **Note:** This project is compatible with node v4+
+> **Note:** This project is compatible with node v6+
 
 ## Usage
 
