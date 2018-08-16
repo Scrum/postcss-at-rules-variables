@@ -1,4 +1,18 @@
-<a name="0.1.5"></a>
+## <small>0.1.6 (2018-08-16)</small>
+
+* ci: bump node version ([93f7fb3](https://github.com/scrum/postcss-at-rules-variables/commit/93f7fb3))
+* ci: drop old node for appveyor ([44dfbc4](https://github.com/scrum/postcss-at-rules-variables/commit/44dfbc4))
+* perf: add rules for changelog file ([f5db350](https://github.com/scrum/postcss-at-rules-variables/commit/f5db350))
+* perf: drop support old node ([171486f](https://github.com/scrum/postcss-at-rules-variables/commit/171486f))
+* perf: remove last slash ([8147769](https://github.com/scrum/postcss-at-rules-variables/commit/8147769))
+* build: bum husky to next version ([bd8647f](https://github.com/scrum/postcss-at-rules-variables/commit/bd8647f))
+* build: update changelog ([6543879](https://github.com/scrum/postcss-at-rules-variables/commit/6543879))
+* build: update depDev ([61a5052](https://github.com/scrum/postcss-at-rules-variables/commit/61a5052))
+* style: remove last line ([4ed6d48](https://github.com/scrum/postcss-at-rules-variables/commit/4ed6d48))
+* docs: change xo link ([266c0b0](https://github.com/scrum/postcss-at-rules-variables/commit/266c0b0))
+
+
+
 ## <small>0.1.5 (2018-04-03)</small>
 
 * 0.1.5 ([a3117bc](https://github.com/scrum/postcss-at-rules-variables/commit/a3117bc))
@@ -13,7 +27,6 @@
 
 
 
-<a name="0.1.4"></a>
 ## <small>0.1.4 (2018-01-22)</small>
 
 * 0.1.4 ([c39cf5a](https://github.com/scrum/postcss-at-rules-variables/commit/c39cf5a))
@@ -24,7 +37,6 @@
 
 
 
-<a name="0.1.3"></a>
 ## <small>0.1.3 (2018-01-17)</small>
 
 * 0.1.3 ([15a0bae](https://github.com/scrum/postcss-at-rules-variables/commit/15a0bae))
@@ -43,7 +55,6 @@
 
 
 
-<a name="0.1.2"></a>
 ## <small>0.1.2 (2017-12-08)</small>
 
 * 0.1.1 ([4d9efd4](https://github.com/scrum/postcss-at-rules-variables/commit/4d9efd4))
@@ -67,7 +78,6 @@
 
 
 
-<a name="0.1.0"></a>
 ## 0.1.0 (2017-04-05)
 
 * 0.1.0 ([aecb563](https://github.com/scrum/postcss-at-rules-variables/commit/aecb563))
@@ -89,7 +99,6 @@
 
 
 
-<a name="0.0.27"></a>
 ## <small>0.0.27 (2017-02-01)</small>
 
 * 0.0.27 ([9aa8e49](https://github.com/scrum/postcss-at-rules-variables/commit/9aa8e49))
@@ -119,7 +128,6 @@
 
 
 
-<a name="0.0.26"></a>
 ## <small>0.0.26 (2016-12-02)</small>
 
 * 0.0.26 ([fade640](https://github.com/scrum/postcss-at-rules-variables/commit/fade640))
@@ -157,7 +165,6 @@
 
 
 
-<a name="0.0.25"></a>
 ## <small>0.0.25 (2016-07-06)</small>
 
 * bump ([0e5e944](https://github.com/scrum/postcss-at-rules-variables/commit/0e5e944))
@@ -175,7 +182,6 @@
 
 
 
-<a name="0.0.24"></a>
 ## <small>0.0.24 (2016-06-22)</small>
 
 * Added babel minify preset ([3e0217a](https://github.com/scrum/postcss-at-rules-variables/commit/3e0217a))
@@ -191,7 +197,6 @@
 
 
 
-<a name="0.0.23"></a>
 ## <small>0.0.23 (2016-06-14)</small>
 
 * added node 6 ([619448e](https://github.com/scrum/postcss-at-rules-variables/commit/619448e))
@@ -208,7 +213,6 @@
 
 
 
-<a name="0.0.22"></a>
 ## <small>0.0.22 (2016-05-24)</small>
 
 * Fixed #56, change xo to eslint, Fixed #61, added eslint-plugin-xo, Fixed #60, added eslint-formatter ([c3886dc](https://github.com/scrum/postcss-at-rules-variables/commit/c3886dc)), closes [#56](https://github.com/scrum/postcss-at-rules-variables/issues/56) [#61](https://github.com/scrum/postcss-at-rules-variables/issues/61) [#60](https://github.com/scrum/postcss-at-rules-variables/issues/60)
@@ -224,7 +228,6 @@
 
 
 
-<a name="0.0.21"></a>
 ## <small>0.0.21 (2016-04-07)</small>
 
 * bump ([9e39e4a](https://github.com/scrum/postcss-at-rules-variables/commit/9e39e4a))
@@ -236,7 +239,6 @@
 
 
 
-<a name="0.0.20"></a>
 ## <small>0.0.20 (2016-04-07)</small>
 
 * bump ([7452ad8](https://github.com/scrum/postcss-at-rules-variables/commit/7452ad8))
@@ -253,7 +255,6 @@
 
 
 
-<a name="0.0.19"></a>
 ## <small>0.0.19 (2016-04-02)</small>
 
 * bump ([f2bf4b0](https://github.com/scrum/postcss-at-rules-variables/commit/f2bf4b0))
@@ -271,7 +272,6 @@
 
 
 
-<a name="0.0.18"></a>
 ## <small>0.0.18 (2016-03-18)</small>
 
 * Added test after transpiling ([12f0c0f](https://github.com/scrum/postcss-at-rules-variables/commit/12f0c0f))
@@ -291,7 +291,6 @@
 
 
 
-<a name="0.0.17"></a>
 ## <small>0.0.17 (2016-03-15)</small>
 
 * bump ([5f180c7](https://github.com/scrum/postcss-at-rules-variables/commit/5f180c7))
@@ -309,7 +308,6 @@
 
 
 
-<a name="0.0.16"></a>
 ## <small>0.0.16 (2016-02-08)</small>
 
 * bump ([973e102](https://github.com/scrum/postcss-at-rules-variables/commit/973e102))
@@ -322,7 +320,6 @@
 
 
 
-<a name="0.0.15"></a>
 ## <small>0.0.15 (2016-02-01)</small>
 
 * bump ([387a2f3](https://github.com/scrum/postcss-at-rules-variables/commit/387a2f3))
@@ -331,7 +328,6 @@
 
 
 
-<a name="0.0.14"></a>
 ## <small>0.0.14 (2016-01-22)</small>
 
 * add changelog ([085a478](https://github.com/scrum/postcss-at-rules-variables/commit/085a478))
@@ -347,7 +343,6 @@
 
 
 
-<a name="0.0.11"></a>
 ## <small>0.0.11 (2015-12-02)</small>
 
 * again migrate es2015+ ([6c8c7d1](https://github.com/scrum/postcss-at-rules-variables/commit/6c8c7d1))
@@ -355,7 +350,6 @@
 
 
 
-<a name="0.0.10"></a>
 ## <small>0.0.10 (2015-12-01)</small>
 
 * update coveralls ([ad764da](https://github.com/scrum/postcss-at-rules-variables/commit/ad764da))
@@ -364,21 +358,18 @@
 
 
 
-<a name="0.0.9"></a>
 ## <small>0.0.9 (2015-12-01)</small>
 
 * update readme ([dca5e05](https://github.com/scrum/postcss-at-rules-variables/commit/dca5e05))
 
 
 
-<a name="0.0.8"></a>
 ## <small>0.0.8 (2015-12-01)</small>
 
 * v0.0.7 ([ff96c1f](https://github.com/scrum/postcss-at-rules-variables/commit/ff96c1f))
 
 
 
-<a name="0.0.7"></a>
 ## <small>0.0.7 (2015-12-01)</small>
 
 * +coveralls ([8bec3dd](https://github.com/scrum/postcss-at-rules-variables/commit/8bec3dd))
