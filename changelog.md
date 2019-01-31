@@ -1,13 +1,24 @@
+## <small>0.1.7 (2019-01-31)</small>
+
+* build: update depDev ([f746e00](https://github.com/scrum/postcss-at-rules-variables/commit/f746e00))
+* build: update lock ([1bc11fc](https://github.com/scrum/postcss-at-rules-variables/commit/1bc11fc))
+* ci: bump node version ([c467e40](https://github.com/scrum/postcss-at-rules-variables/commit/c467e40))
+* fix: target node version ([5aaccda](https://github.com/scrum/postcss-at-rules-variables/commit/5aaccda))
+
+
+
 ## <small>0.1.6 (2018-08-16)</small>
 
+* 0.1.6 ([5b1c683](https://github.com/scrum/postcss-at-rules-variables/commit/5b1c683))
+* build: bum husky to next version ([bd8647f](https://github.com/scrum/postcss-at-rules-variables/commit/bd8647f))
+* build: update changelog ([54ab905](https://github.com/scrum/postcss-at-rules-variables/commit/54ab905))
+* build: update changelog ([6543879](https://github.com/scrum/postcss-at-rules-variables/commit/6543879))
+* build: update depDev ([61a5052](https://github.com/scrum/postcss-at-rules-variables/commit/61a5052))
 * ci: bump node version ([93f7fb3](https://github.com/scrum/postcss-at-rules-variables/commit/93f7fb3))
 * ci: drop old node for appveyor ([44dfbc4](https://github.com/scrum/postcss-at-rules-variables/commit/44dfbc4))
 * perf: add rules for changelog file ([f5db350](https://github.com/scrum/postcss-at-rules-variables/commit/f5db350))
 * perf: drop support old node ([171486f](https://github.com/scrum/postcss-at-rules-variables/commit/171486f))
 * perf: remove last slash ([8147769](https://github.com/scrum/postcss-at-rules-variables/commit/8147769))
-* build: bum husky to next version ([bd8647f](https://github.com/scrum/postcss-at-rules-variables/commit/bd8647f))
-* build: update changelog ([6543879](https://github.com/scrum/postcss-at-rules-variables/commit/6543879))
-* build: update depDev ([61a5052](https://github.com/scrum/postcss-at-rules-variables/commit/61a5052))
 * style: remove last line ([4ed6d48](https://github.com/scrum/postcss-at-rules-variables/commit/4ed6d48))
 * docs: change xo link ([266c0b0](https://github.com/scrum/postcss-at-rules-variables/commit/266c0b0))
 
@@ -65,8 +76,8 @@
 * ci: add node 8,9 ([dfd480d](https://github.com/scrum/postcss-at-rules-variables/commit/dfd480d))
 * chore: Deleted unused packages ([9405a80](https://github.com/scrum/postcss-at-rules-variables/commit/9405a80))
 * chore: fix version for eslint-plugin-require-path-exists ([22a3cc0](https://github.com/scrum/postcss-at-rules-variables/commit/22a3cc0))
-* chore(changelog): Update changelog ([56d017d](https://github.com/scrum/postcss-at-rules-variables/commit/56d017d))
 * chore(changelog): Update changelog ([2338f7d](https://github.com/scrum/postcss-at-rules-variables/commit/2338f7d))
+* chore(changelog): Update changelog ([56d017d](https://github.com/scrum/postcss-at-rules-variables/commit/56d017d))
 * chore(package): update ava to version 0.19.1 ([cd730c8](https://github.com/scrum/postcss-at-rules-variables/commit/cd730c8))
 * chore(package): update babel-cli to version 6.24.1 ([9b422f9](https://github.com/scrum/postcss-at-rules-variables/commit/9b422f9))
 * chore(package): update babel-register to version 6.24.1 ([9c6e652](https://github.com/scrum/postcss-at-rules-variables/commit/9c6e652))
@@ -383,11 +394,11 @@
 * update readme for npm ([819d0ce](https://github.com/scrum/postcss-at-rules-variables/commit/819d0ce))
 * update readme for npm ([56aa0ce](https://github.com/scrum/postcss-at-rules-variables/commit/56aa0ce))
 * update readme for npm ([3c9f62b](https://github.com/scrum/postcss-at-rules-variables/commit/3c9f62b))
-* Update README.md ([aad2382](https://github.com/scrum/postcss-at-rules-variables/commit/aad2382))
-* Update README.md ([e771cc3](https://github.com/scrum/postcss-at-rules-variables/commit/e771cc3))
 * Update README.md ([3853fe5](https://github.com/scrum/postcss-at-rules-variables/commit/3853fe5))
-* Update README.md ([82a2b89](https://github.com/scrum/postcss-at-rules-variables/commit/82a2b89))
+* Update README.md ([aad2382](https://github.com/scrum/postcss-at-rules-variables/commit/aad2382))
 * Update README.md ([4c83f53](https://github.com/scrum/postcss-at-rules-variables/commit/4c83f53))
+* Update README.md ([e771cc3](https://github.com/scrum/postcss-at-rules-variables/commit/e771cc3))
+* Update README.md ([82a2b89](https://github.com/scrum/postcss-at-rules-variables/commit/82a2b89))
 
 
 
