@@ -30,7 +30,7 @@ var atEach = require('postcss-each');
 var atVariables = require('postcss-at-rules-variables');
 var atIf = require('postcss-conditionals');
 var atFor = require('postcss-for');
-var customProperties = require('postcss-custom-properties');
+var cssVariables = require('postcss-css-variables');
 var nested = require('postcss-nested');
 
 // CSS to be processed
@@ -49,7 +49,7 @@ var output = postcss()
     }))
     .use(atFor())
     .use(atIf())
-    .use(customProperties())
+    .use(cssVariables())
     .use(nested())
     .process(css, {
         from: 'css/input.css'
