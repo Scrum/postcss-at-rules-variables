@@ -20,7 +20,9 @@
     "prepare": "npm run build",
     "build": "rimraf lib && babel src -d lib",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "test": "nyc ava"
+    "test": "nyc ava",
+    "lint": "eslint {src,test}/*.js *.md --fix",
+    "pretest": "clinton && npm run lint"
   },
   "files": [
     "lib/"
@@ -93,7 +95,7 @@
         "@babel/preset-env",
         {
           "targets": {
-            "node": 6
+            "node": 8
           }
         }
       ],
