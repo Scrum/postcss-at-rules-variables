@@ -16,7 +16,7 @@ Adds the ability to use a custom property in the options, at-rules.
 $ npm install postcss-at-rules-variables
 ```
 
-> **Note:** This project is compatible with node v6+
+> **Note:** This project is compatible with node v8+
 
 ## Usage
 
@@ -38,23 +38,23 @@ var css = fs.readFileSync('css/input.css', 'utf8');
 
 // Process CSS
 var output = postcss()
-    .use(atVariables({ /* atRules: ['media'] */ }))
-    .use(colorFunction())
-    .use(atEach())
-    .use(atImport({
-        plugins: [
-            require('postcss-at-rules-variables')({ /* options */ }),
-            require('postcss-import')
-        ]
-    }))
-    .use(atFor())
-    .use(atIf())
-    .use(cssVariables())
-    .use(nested())
-    .process(css, {
-        from: 'css/input.css'
-    })
-    .css;
+  .use(atVariables({ /* atRules: ['media'] */ }))
+  .use(colorFunction())
+  .use(atEach())
+  .use(atImport({
+    plugins: [
+      require('postcss-at-rules-variables')({ /* options */ }),
+      require('postcss-import')
+    ]
+  }))
+  .use(atFor())
+  .use(atIf())
+  .use(cssVariables())
+  .use(nested())
+  .process(css, {
+    from: 'css/input.css'
+  })
+  .css;
 
 console.log(output);
 ```

@@ -13,7 +13,7 @@
   },
   "main": "lib/index.js",
   "engines": {
-    "node": ">=6"
+    "node": ">=8"
   },
   "scripts": {
     "version": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"build: update changelog\"",
@@ -48,13 +48,14 @@
     "@babel/register": "^7.4.4",
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-angular": "^8.0.0",
+    "acorn": "^6.1.1",
     "ava": "*",
     "babel-eslint": "^10.0.1",
     "babel-plugin-add-module-exports": "^1.0.2",
     "babel-preset-minify": "^0.5.0",
     "clinton": "^0.14.0",
     "conventional-changelog-cli": "^2.0.21",
-    "coveralls": "^3.0.3",
+    "coveralls": "^3.0.4",
     "eslint": "^5.16.0",
     "eslint-config-xo": "^0.26.0",
     "eslint-config-xo-space": "^0.21.0",
@@ -66,7 +67,7 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-unicorn": "^9.0.0",
     "husky": "^2.4.0",
-    "lint-staged": "^8.1.7",
+    "lint-staged": "^8.2.0",
     "nyc": "^14.1.1",
     "rimraf": "^2.6.3"
   },
