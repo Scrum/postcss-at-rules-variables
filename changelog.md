@@ -1,5 +1,19 @@
+## <small>0.1.8 (2019-06-06)</small>
+
+* style: according linter ([659398e](https://github.com/scrum/postcss-at-rules-variables/commit/659398e))
+* build: add pretest and lint fix ([523421a](https://github.com/scrum/postcss-at-rules-variables/commit/523421a))
+* build: update depDev ([74f3cca](https://github.com/scrum/postcss-at-rules-variables/commit/74f3cca))
+* build: update lint system and coverage ([1539df8](https://github.com/scrum/postcss-at-rules-variables/commit/1539df8))
+* ci: drop support old node ([8f15811](https://github.com/scrum/postcss-at-rules-variables/commit/8f15811))
+* ci: remove because node  x86 package not found ([3a3c4e0](https://github.com/scrum/postcss-at-rules-variables/commit/3a3c4e0))
+* docs: change custome property to css variables ([e4d5f12](https://github.com/scrum/postcss-at-rules-variables/commit/e4d5f12))
+
+
+
 ## <small>0.1.7 (2019-01-31)</small>
 
+* 0.1.7 ([163b2ff](https://github.com/scrum/postcss-at-rules-variables/commit/163b2ff))
+* build: update changelog ([8bd6a49](https://github.com/scrum/postcss-at-rules-variables/commit/8bd6a49))
 * build: update depDev ([f746e00](https://github.com/scrum/postcss-at-rules-variables/commit/f746e00))
 * build: update lock ([1bc11fc](https://github.com/scrum/postcss-at-rules-variables/commit/1bc11fc))
 * ci: bump node version ([c467e40](https://github.com/scrum/postcss-at-rules-variables/commit/c467e40))
