@@ -1,9 +1,26 @@
+## <small>0.1.9 (2019-10-31)</small>
+
+* build: update depDev ([4c5d42b](https://github.com/scrum/postcss-at-rules-variables/commit/4c5d42b))
+* build(deps): bump eslint-utils from 1.3.1 to 1.4.2 ([f447259](https://github.com/scrum/postcss-at-rules-variables/commit/f447259))
+* build(deps): bump js-yaml from 3.12.1 to 3.13.1 ([5b52f1b](https://github.com/scrum/postcss-at-rules-variables/commit/5b52f1b))
+* build(deps): bump lodash.defaultsdeep from 4.6.0 to 4.6.1 ([f4d6fd9](https://github.com/scrum/postcss-at-rules-variables/commit/f4d6fd9))
+* build(deps): bump lodash.merge from 4.6.1 to 4.6.2 ([7df9858](https://github.com/scrum/postcss-at-rules-variables/commit/7df9858))
+* build(deps): bump lodash.template from 4.4.0 to 4.5.0 ([9562494](https://github.com/scrum/postcss-at-rules-variables/commit/9562494))
+* build(deps): bump mixin-deep from 1.3.1 to 1.3.2 ([e342dce](https://github.com/scrum/postcss-at-rules-variables/commit/e342dce))
+* Create funding.yml ([da6ebe6](https://github.com/scrum/postcss-at-rules-variables/commit/da6ebe6))
+* docs: fix badge node ([dcae404](https://github.com/scrum/postcss-at-rules-variables/commit/dcae404))
+* docs: remove badginators ([3a1d2a7](https://github.com/scrum/postcss-at-rules-variables/commit/3a1d2a7))
+
+
+
 ## <small>0.1.8 (2019-06-06)</small>
 
-* style: according linter ([659398e](https://github.com/scrum/postcss-at-rules-variables/commit/659398e))
+* 0.1.8 ([d47d645](https://github.com/scrum/postcss-at-rules-variables/commit/d47d645))
 * build: add pretest and lint fix ([523421a](https://github.com/scrum/postcss-at-rules-variables/commit/523421a))
+* build: update changelog ([67db8ee](https://github.com/scrum/postcss-at-rules-variables/commit/67db8ee))
 * build: update depDev ([74f3cca](https://github.com/scrum/postcss-at-rules-variables/commit/74f3cca))
 * build: update lint system and coverage ([1539df8](https://github.com/scrum/postcss-at-rules-variables/commit/1539df8))
+* style: according linter ([659398e](https://github.com/scrum/postcss-at-rules-variables/commit/659398e))
 * ci: drop support old node ([8f15811](https://github.com/scrum/postcss-at-rules-variables/commit/8f15811))
 * ci: remove because node  x86 package not found ([3a3c4e0](https://github.com/scrum/postcss-at-rules-variables/commit/3a3c4e0))
 * docs: change custome property to css variables ([e4d5f12](https://github.com/scrum/postcss-at-rules-variables/commit/e4d5f12))
