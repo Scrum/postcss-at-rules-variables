@@ -1,0 +1,22 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": 8
+        }
+      }
+    ],
+    [
+      "minify",
+      {
+        "removeUndefined": false,
+        "mangle": false
+      }
+    ]
+  ],
+  "plugins": [
+    "add-module-exports"
+  ]
+}
