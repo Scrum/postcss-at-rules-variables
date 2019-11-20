@@ -1,5 +1,16 @@
+## <small>0.1.10 (2019-11-20)</small>
+
+* build: add funding ([6fc9fcb](https://github.com/scrum/postcss-at-rules-variables/commit/6fc9fcb))
+* build: move config to file ([46cfc84](https://github.com/scrum/postcss-at-rules-variables/commit/46cfc84))
+* build: update depDev ([f5f4939](https://github.com/scrum/postcss-at-rules-variables/commit/f5f4939))
+
+
+
 ## <small>0.1.9 (2019-10-31)</small>
 
+* 0.1.9 ([59cf7fa](https://github.com/scrum/postcss-at-rules-variables/commit/59cf7fa))
+* Create funding.yml ([da6ebe6](https://github.com/scrum/postcss-at-rules-variables/commit/da6ebe6))
+* build: update changelog ([9f2ae16](https://github.com/scrum/postcss-at-rules-variables/commit/9f2ae16))
 * build: update depDev ([4c5d42b](https://github.com/scrum/postcss-at-rules-variables/commit/4c5d42b))
 * build(deps): bump eslint-utils from 1.3.1 to 1.4.2 ([f447259](https://github.com/scrum/postcss-at-rules-variables/commit/f447259))
 * build(deps): bump js-yaml from 3.12.1 to 3.13.1 ([5b52f1b](https://github.com/scrum/postcss-at-rules-variables/commit/5b52f1b))
@@ -7,7 +18,6 @@
 * build(deps): bump lodash.merge from 4.6.1 to 4.6.2 ([7df9858](https://github.com/scrum/postcss-at-rules-variables/commit/7df9858))
 * build(deps): bump lodash.template from 4.4.0 to 4.5.0 ([9562494](https://github.com/scrum/postcss-at-rules-variables/commit/9562494))
 * build(deps): bump mixin-deep from 1.3.1 to 1.3.2 ([e342dce](https://github.com/scrum/postcss-at-rules-variables/commit/e342dce))
-* Create funding.yml ([da6ebe6](https://github.com/scrum/postcss-at-rules-variables/commit/da6ebe6))
 * docs: fix badge node ([dcae404](https://github.com/scrum/postcss-at-rules-variables/commit/dcae404))
 * docs: remove badginators ([3a1d2a7](https://github.com/scrum/postcss-at-rules-variables/commit/3a1d2a7))
 
