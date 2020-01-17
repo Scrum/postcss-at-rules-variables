@@ -1,6 +1,5 @@
-node_modules/
-lib/
-coverage/
-.nyc_output/
+node_modules
+lib
+coverage
+.nyc_output
 npm-debug.log
-*.sublime*
