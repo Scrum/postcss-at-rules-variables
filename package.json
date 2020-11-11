@@ -21,7 +21,8 @@
     "build": "rimraf lib && babel src -d lib",
     "test": "nyc ava",
     "lint": "eslint {src,test}/*.js *.md --fix",
-    "pretest": "clinton && npm run lint"
+    "pretest": "clinton && npm run lint",
+    "publish": "clean-publish"
   },
   "files": [
     "lib/"
