@@ -16,7 +16,7 @@ function circularReference(maps) {
 export default (options = {}) => {
   options = {
     atRules: [...new Set(['for', 'if', 'else', 'each', 'mixin', 'custom-media', ...options.atRules || ''])],
-    variables: {...options.variables},
+    variables: {...options.variables}
   };
 
   return {
