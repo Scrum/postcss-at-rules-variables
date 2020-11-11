@@ -6,11 +6,9 @@
     "*.{html,jpg}"
   ],
   "rules": {
-    "pkg-main": [
-      "off"
-    ],
-    "xo": [
-      "off"
-    ]
+    "pkg-main": "off",
+    "ava": "off",
+    "xo": "off",
+    "use-travis": "off"
   }
 }
