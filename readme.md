@@ -13,10 +13,10 @@ Adds the ability to use a custom property in the options, at-rules.
 ## Install
 
 ```bash
-$ npm install postcss-at-rules-variables
+$ npm install --save-dev postcss postcss-at-rules-variables
 ```
 
-> **Note:** This project is compatible with node v8+
+> **Note:** This project is compatible with node v10+
 
 ## Usage
 
