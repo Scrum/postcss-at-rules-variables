@@ -1,7 +1,25 @@
+## 0.2.0 (2020-11-11)
+
+* style: after lint ([cb5ee2e](https://github.com/scrum/postcss-at-rules-variables/commit/cb5ee2e))
+* build: add clean publish ([e84c465](https://github.com/scrum/postcss-at-rules-variables/commit/e84c465))
+* build: drop support old nodejs ([01ca621](https://github.com/scrum/postcss-at-rules-variables/commit/01ca621))
+* build: update dep dev ([c199537](https://github.com/scrum/postcss-at-rules-variables/commit/c199537))
+* build: update gitignore config ([b2661c3](https://github.com/scrum/postcss-at-rules-variables/commit/b2661c3))
+* build(deps-dev): bump acorn from 7.1.0 to 7.1.1 ([1e4ecea](https://github.com/scrum/postcss-at-rules-variables/commit/1e4ecea))
+* ci: change travis and appveyor to gitlab actions ([6615f32](https://github.com/scrum/postcss-at-rules-variables/commit/6615f32))
+* ci: forgot nycrc ([eab5256](https://github.com/scrum/postcss-at-rules-variables/commit/eab5256))
+* docs: update according recommendation on migration postcss 8 ([19754bf](https://github.com/scrum/postcss-at-rules-variables/commit/19754bf))
+* docs: update license ([692812d](https://github.com/scrum/postcss-at-rules-variables/commit/692812d))
+* refactor: migrate to postcss 8, close #202 ([975ec52](https://github.com/scrum/postcss-at-rules-variables/commit/975ec52)), closes [#202](https://github.com/scrum/postcss-at-rules-variables/issues/202)
+
+
+
 ## <small>0.1.10 (2019-11-20)</small>
 
+* 0.1.10 ([3024777](https://github.com/scrum/postcss-at-rules-variables/commit/3024777))
 * build: add funding ([6fc9fcb](https://github.com/scrum/postcss-at-rules-variables/commit/6fc9fcb))
 * build: move config to file ([46cfc84](https://github.com/scrum/postcss-at-rules-variables/commit/46cfc84))
+* build: update changelog ([9c672da](https://github.com/scrum/postcss-at-rules-variables/commit/9c672da))
 * build: update depDev ([f5f4939](https://github.com/scrum/postcss-at-rules-variables/commit/f5f4939))
 
 
