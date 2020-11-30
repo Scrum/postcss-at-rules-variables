@@ -1,6 +1,6 @@
 {
   "name": "postcss-at-rules-variables",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "PostCss plugin to use CSS Custom Properties in at-rule @each, @for, @if, @else ",
   "license": "MIT",
   "repository": "scrum/postcss-at-rules-variables",
@@ -41,37 +41,36 @@
     "property"
   ],
   "devDependencies": {
-    "@babel/cli": "^7.12.1",
-    "@babel/core": "^7.12.3",
-    "@babel/preset-env": "^7.12.1",
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
     "@babel/register": "^7.12.1",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-angular": "^11.0.0",
     "acorn": "^8.0.4",
     "ava": "*",
     "babel-eslint": "^10.1.0",
-    "babel-plugin-add-module-exports": "^1.0.4",
     "babel-preset-minify": "^0.5.1",
     "clean-publish": "^1.1.8",
     "clinton": "^0.14.0",
     "conventional-changelog-cli": "^2.1.1",
-    "eslint": "^7.13.0",
+    "eslint": "^7.14.0",
     "eslint-config-xo": "^0.33.1",
     "eslint-config-xo-space": "^0.25.0",
     "eslint-plugin-ava": "^11.0.0",
     "eslint-plugin-babel": "^5.3.1",
-    "eslint-plugin-html": "^6.1.0",
+    "eslint-plugin-html": "^6.1.1",
     "eslint-plugin-markdown": "^1.0.2",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-unicorn": "^23.0.0",
     "husky": "^4.3.0",
-    "lint-staged": "^10.5.1",
+    "lint-staged": "^10.5.2",
     "nyc": "^15.1.0",
-    "postcss": "^8.1.7",
+    "postcss": "8.1.10",
     "rimraf": "^3.0.2"
   },
   "peerDependencies": {
-    "postcss": "^8.1.7"
+    "postcss": "^8.1.10"
   },
   "funding": {
     "type": "patreon",

@@ -1,5 +1,13 @@
+## <small>0.2.1 (2020-11-30)</small>
+
+* build: update dep dev ([045802c](https://github.com/scrum/postcss-at-rules-variables/commit/045802c))
+* fix: require is undefined, close #205 ([bdc8b2f](https://github.com/scrum/postcss-at-rules-variables/commit/bdc8b2f)), closes [#205](https://github.com/scrum/postcss-at-rules-variables/issues/205)
+
+
+
 ## 0.2.0 (2020-11-11)
 
+* 0.2.0 ([af43dbc](https://github.com/scrum/postcss-at-rules-variables/commit/af43dbc))
 * style: after lint ([cb5ee2e](https://github.com/scrum/postcss-at-rules-variables/commit/cb5ee2e))
 * build: add clean publish ([e84c465](https://github.com/scrum/postcss-at-rules-variables/commit/e84c465))
 * build: drop support old nodejs ([01ca621](https://github.com/scrum/postcss-at-rules-variables/commit/01ca621))
