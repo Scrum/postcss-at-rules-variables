@@ -13,7 +13,7 @@ function circularReference(maps) {
   }, maps);
 }
 
-export default (options = {}) => {
+module.exports = (options = {}) => {
   options = {
     atRules: [...new Set(['for', 'if', 'else', 'each', 'mixin', 'custom-media', ...options.atRules || ''])],
     variables: {...options.variables}
@@ -42,4 +42,4 @@ export default (options = {}) => {
   };
 };
 
-export const postcss = true;
+module.exports.postcss = true;
