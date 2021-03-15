@@ -6,6 +6,12 @@ const processing = (input, options) => {
   return postcss([plugin(options)]).process(input).css;
 };
 
+test('it change circular reference witch cacl', t => {
+  const expected = ':root { --original-var: 4px; --nested-var: calc(2 * var(--original-var)); } .class-name { @mixin mixinName calc(2 * 4px); }';
+  const value = ':root { --original-var: 4px; --nested-var: calc(2 * var(--original-var)); } .class-name { @mixin mixinName var(--nested-var); }';
+  t.is(processing(value), expected);
+});
+
 test('it change circular reference', t => {
   const expected = ':root{ --from: 1; --to: var(--from)} @for $i from 1 to 1';
   const value = ':root{ --from: 1; --to: var(--from)} @for $i from var(--from) to var(--to)';
