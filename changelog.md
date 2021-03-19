@@ -1,5 +1,17 @@
+## 0.3.0 (2021-03-19)
+
+* test: 'nested' vars not being processed, issue #209 ([e962b52](https://github.com/scrum/postcss-at-rules-variables/commit/e962b52)), closes [#209](https://github.com/scrum/postcss-at-rules-variables/issues/209)
+* test: timeout for test ([f0f15b9](https://github.com/scrum/postcss-at-rules-variables/commit/f0f15b9))
+* test: update for issue #209 ([d140432](https://github.com/scrum/postcss-at-rules-variables/commit/d140432)), closes [#209](https://github.com/scrum/postcss-at-rules-variables/issues/209)
+* docs: declarationByWalk description ([c1297e8](https://github.com/scrum/postcss-at-rules-variables/commit/c1297e8))
+* feat: add declarationByWalk option, close issue #209 ([76e097b](https://github.com/scrum/postcss-at-rules-variables/commit/76e097b)), closes [#209](https://github.com/scrum/postcss-at-rules-variables/issues/209)
+* build(deps): bump ini from 1.3.5 to 1.3.7 ([5bdba52](https://github.com/scrum/postcss-at-rules-variables/commit/5bdba52))
+
+
+
 ## <small>0.2.1 (2020-11-30)</small>
 
+* 0.2.1 ([341fc04](https://github.com/scrum/postcss-at-rules-variables/commit/341fc04))
 * build: update dep dev ([045802c](https://github.com/scrum/postcss-at-rules-variables/commit/045802c))
 * fix: require is undefined, close #205 ([bdc8b2f](https://github.com/scrum/postcss-at-rules-variables/commit/bdc8b2f)), closes [#205](https://github.com/scrum/postcss-at-rules-variables/issues/205)
 

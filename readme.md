@@ -160,6 +160,14 @@ Type: `Object`
 Default: `{}`  
 Description: *Allows you to pass an object of variables for `:root`. These definitions will override any that exist in the CSS*
 
+#### `declarationByWalk`
+
+Type: `boolean`  
+Default: `false`  
+Description: *Searches for root declarations by traversing all declarations before interpolating them.*
+
+> :warning: Attention, this approach is slower and carries the risk of overriding existing variables
+
 [postcss-conditionals]:     https://github.com/andyjansson/postcss-conditionals
 [postcss-each]:             https://github.com/outpunk/postcss-each
 [postcss-for]:              https://github.com/antyakushev/postcss-for

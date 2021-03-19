@@ -13,10 +13,29 @@ function circularReference(maps) {
   }, maps);
 }
 
+function getProperty(nodes) {
+  let propertys = {};
+
+  nodes.walkRules(rule => {
+    if (rule.selector !== ':root') {
+      return;
+    }
+
+    rule.each(({type, prop: property, value}) => {
+      if (type === 'decl') {
+        propertys[property] = value;
+      }
+    });
+  });
+
+  return propertys;
+}
+
 module.exports = (options = {}) => {
   options = {
     atRules: [...new Set(['for', 'if', 'else', 'each', 'mixin', 'custom-media', ...options.atRules || ''])],
-    variables: {...options.variables}
+    variables: {...options.variables},
+    declarationByWalk: options.declarationByWalk ?? false
   };
 
   return {
@@ -29,8 +48,13 @@ module.exports = (options = {}) => {
             variables[node.prop] = node.value;
           }
         },
-        Once() {
-          variables = circularReference(Object.assign(variables, options.variables));
+        Once(root) {
+          let declarativeVariables = variables;
+          if (options.declarationByWalk) {
+            declarativeVariables = getProperty(root);
+          }
+
+          variables = circularReference(Object.assign(declarativeVariables, options.variables));
         },
         AtRule(rule) {
           if (options.atRules.includes(rule.name)) {
