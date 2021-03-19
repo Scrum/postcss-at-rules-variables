@@ -6,10 +6,10 @@ const processing = (input, options) => {
   return postcss([plugin(options)]).process(input).css;
 };
 
-test('it change circular reference witch cacl', t => {
-  const expected = ':root { --original-var: 4px; --nested-var: calc(2 * var(--original-var)); } .class-name { @mixin mixinName calc(2 * 4px); }';
-  const value = ':root { --original-var: 4px; --nested-var: calc(2 * var(--original-var)); } .class-name { @mixin mixinName var(--nested-var); }';
-  t.is(processing(value), expected);
+test('it change circular reference witch declarationByWalk option', t => {
+  const expected = ':root { --nested-var: calc(2 * var(--original-var)); } .class-name { @mixin mixinName calc(2 * 4px); } :root { --original-var: 4px; }';
+  const value = ':root { --nested-var: calc(2 * var(--original-var)); } .class-name { @mixin mixinName var(--nested-var); } :root { --original-var: 4px; }';
+  t.is(processing(value, {declarationByWalk: true}), expected);
 });
 
 test('it change circular reference', t => {
